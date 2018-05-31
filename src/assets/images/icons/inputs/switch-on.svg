@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="24px" viewBox="0 0 36 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Input/Switch/On</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Input/Switch/On">
+            <rect id="Bounding-Box" x="0" y="0" width="36" height="24"></rect>
+            <path d="M2,12 C2,6.4771525 6.4831571,2 11.9933717,2 L24.0066283,2 C29.5258151,2 34,6.47593818 34,12 C34,17.5228475 29.5168429,22 24.0066283,22 L11.9933717,22 C6.4741849,22 2,17.5240618 2,12 Z M24,18 C27.3137085,18 30,15.3137085 30,12 C30,8.6862915 27.3137085,6 24,6 C20.6862915,6 18,8.6862915 18,12 C18,15.3137085 20.6862915,18 24,18 Z" id="switch-on" fill="#2199F4"></path>
+        </g>
+    </g>
+</svg>

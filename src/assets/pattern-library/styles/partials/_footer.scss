@@ -1,0 +1,97 @@
+.pl-footer {
+  padding: $gridGap * 2 $percentPadding $gridGap * 4;
+  background-color: map-deep-get($colors, white, darken-1);
+
+  @include media('>=md') {
+    padding: $gridGap * 2 $percentPadding/2 $gridGap * 4;
+  }
+}
+
+.pl-footer__box {
+  display: flex;
+  flex-direction: column;
+
+  @include media('>=sm') {
+    flex-direction: row;
+  }
+}
+
+.pl-footer__link {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: 100%;
+  padding: $gridGap * 1.5 $gridGap;
+  overflow: hidden;
+  color: map-deep-get($colors, black, primary);
+  text-decoration: none;
+  background-color: map-deep-get($colors, white, darken-2);
+  transition: background-color 200ms;
+
+  &.prev {
+    margin-right: auto;
+  }
+
+  &.next {
+    margin-left: auto;
+  }
+
+  &:hover {
+    background-color: darken(map-deep-get($colors, white, darken-2), 7%);
+  }
+
+  + .pl-footer__link {
+    margin-top: $gridGap;
+
+    @include media('>=sm') {
+      margin-top: 0;
+    }
+  }
+
+  @include media('>=sm') {
+    max-width: calc(50% - #{$gridGap/2});
+  }
+}
+
+.pl-footer__link-text {
+  @include text('soleil', 14, 400);
+  margin: 0;
+
+  .prev & {
+    margin-left: calc(6px + #{$gridGap});
+  }
+}
+
+.pl-footer__link-page {
+  @include text('soleil', 24, 400);
+  display: flex;
+  align-items: center;
+  margin: 0;
+  text-transform: capitalize;
+
+  @include media('>=lg') {
+    font-size: 28px;
+  }
+
+  &::after {
+    @include background-svg(
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 9"><defs><style>.cls-1{fill:#{map-deep-get($colors, black, primary)};}</style></defs><title>icon-arrow-right</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path id="right-a" class="cls-1" d="M6,4.5a.75.75,0,0,0-.28-.57h0L1.23.17h0A.75.75,0,0,0,.75,0,.75.75,0,0,0,0,.75v7.5A.75.75,0,0,0,.75,9a.75.75,0,0,0,.47-.18h0l4.5-3.75h0A.75.75,0,0,0,6,4.5Z"/></g></g></svg>'
+    );
+    display: block;
+    flex-shrink: 0;
+    width: 6px;
+    height: 9px;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    content: '';
+
+    @at-root.prev #{&} {
+      order: -1;
+      margin-right: $gridGap;
+      transform: scaleX(-1);
+    }
+
+    @at-root.next #{&} {
+      margin-left: auto;
+    }
+  }
+}

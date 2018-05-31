@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Trigger/Demographic</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Trigger/Demographic">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M11,3.05777311 L11,13.0567227 L20.94,13.0567227 C20.44,17.0483193 16.63,21 12,21 C7.03,21 3,16.9385504 3,11.9789916 C3,7.35871849 6.5,3.55672269 11,3.05777311 Z M12,2 C17.52,2 22,6.07142857 22,12.0588235 L12,12.0588235 L12,2 Z" id="Combined-Shape" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

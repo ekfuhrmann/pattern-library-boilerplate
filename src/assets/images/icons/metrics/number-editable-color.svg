@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Metrics/Number-Editable-Color</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Metrics/Number-Editable-Color">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <circle id="circle" fill="#2199F4" transform="translate(12.000000, 12.000000) rotate(-360.000000) translate(-12.000000, -12.000000) " cx="12" cy="12" r="12"></circle>
+            <text id="3" font-family="Soleil-Bold, Soleil" font-size="14" font-weight="bold" line-spacing="18" fill="#EAEBED">
+                <tspan x="8.248" y="17">3</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

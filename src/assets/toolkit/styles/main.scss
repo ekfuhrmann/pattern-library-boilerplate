@@ -1,0 +1,29 @@
+// Media Query Breakpoint Map (Modify as needed)
+$breakpoints: (
+  xs: 320px,
+  sm: 650px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1440px
+);
+
+// VENDORS
+@import 'include-media/dist/_include-media.scss'; // loaded from node_modules
+
+// PARTIALS
+@import 'partials/btn';
+
+// BOX-SIZING PRESETS
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+}

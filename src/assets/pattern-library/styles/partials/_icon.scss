@@ -1,0 +1,25 @@
+.pl-icon {
+    align-self: center;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+
+    .pl-btn & {
+        margin-left: $gridGap/2;
+    }
+}
+
+.pl-icon--plus {
+    width: 12px;
+    height: 12px;
+}
+
+.pl-icon--minus {
+    width: 10px;
+    height: 3px;
+}
+
+.pl-icon--code {
+    width: 20px;
+    height: 16px;
+}

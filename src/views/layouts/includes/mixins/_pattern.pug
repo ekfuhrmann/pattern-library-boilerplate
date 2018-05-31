@@ -1,0 +1,74 @@
+mixin pattern-preview-block(hasMobile, codeSnippet, desktopImages, mobileImages, previewBgColor)
+  - var previewClass = ''
+  if hasMobile
+    - previewClass = 'has-mobile';
+  if previewBgColor === 'offwhite'
+    - previewClass = `offwhite ${previewClass}`
+  else if previewBgColor === 'gray'
+    - previewClass = `gray ${previewClass}`
+  .pl-pattern__preview-block(class= previewClass )
+    .pl-pattern__preview
+      .pl-pattern__preview--desktop
+        //- desktop content
+        if codeSnippet
+          .pl-pattern__code-preview
+            != codeSnippet
+        if desktopImages
+          each image in desktopImages
+            if image.image !== ''
+              +pattern-image(image.image, image.imageDescription)
+      .pl-pattern__preview--mobile
+        //- mobile content (only used for mobile images)
+        if mobileImages
+          each image in mobileImages
+            if image.image !== ''
+              +pattern-image(image.image, image.imageDescription)
+
+    //- Check if there is code to render
+    if codeSnippet
+      +pattern-code(codeSnippet)
+
+//- content
+mixin pattern-code(snippet)
+  - var text = test
+  .pl-pattern__code-block
+    button.pl-btn.pl-pattern__code-btn.copy Copy
+      +inline-svg('pl-icon--code', 'pl-icon')
+    pre
+      code.xml!= snippet
+    a.pl-pattern__code-fade(href='#')
+      button.pl-btn.pl-pattern__code-btn.expand Show More
+        +inline-svg('pl-icon--plus', 'pl-icon')
+    button.pl-btn.pl-pattern__code-btn.collapse Show Less
+      +inline-svg('pl-icon--minus', 'pl-icon')
+
+mixin pattern-image(image, description)
+  img.pl-pattern__image(src=`./assets/images/${image}` alt= description)
+
+mixin pattern-color(name, hex, opacity)
+  .pl-pattern__grid-item.pl-colors
+    .pl-pattern__grid-sample(style= !opacity ? `background-color: ${hex.substring(0, 7)}` : `background-color: ${hex.substring(0, 7)}; opacity: ${opacity}`)
+      button.pl-btn.pl-pattern__grid-btn.copy Copy HEX
+    .pl-pattern__grid-content
+      p.pl-pattern__grid-text= name
+      p.pl-pattern__grid-text.pl-hex= hex
+
+//- invert(optional) only if icon matches background color
+mixin pattern-icon(section, file, invert= false)
+  - var cleanedFileName = file.substr(0, file.length - 4) // remove .pug extension
+  a.pl-pattern__grid-item.pl-icons(href=`./assets/images/icons/${section}/${file}` download= file)
+    .pl-pattern__grid-sample
+      img(src=`./assets/images/icons/${section}/${file}`, alt=`${cleanedFileName} icon`, class= invert ? 'pl-inverted' : '')
+    .pl-pattern__grid-content
+      p.pl-pattern__grid-text= cleanedFileName
+
+mixin pattern-typography(name, properties, usages)
+  .pl-pattern__typography
+    .pl-pattern__typography-sample(class=`pl-${name.toLowerCase()}`)= name
+    .pl-pattern__typography-content
+      ul.pl-pattern__typography-list Basic Properties
+        each property in properties
+          li.pl-pattern__typography-list-item= property
+      ul.pl-pattern__typography-list Suggested Usage
+        each usage in usages
+          li.pl-pattern__typography-list-item= usage

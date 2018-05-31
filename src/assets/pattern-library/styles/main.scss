@@ -1,0 +1,82 @@
+// NORMALIZE
+@import 'normalize-scss/sass/normalize'; // loaded from node_modules
+
+// VENDORS
+@import 'include-media/dist/_include-media.scss'; // loaded from node_modules
+@import 'vendors/viewport-text';
+@import 'vendors/link-underline';
+
+// HELPERS
+@import 'helpers/variables';
+@import 'helpers/colors';
+@import 'helpers/text';
+@import 'helpers/utilities';
+
+// PARTIALS
+@import 'partials/btn';
+@import 'partials/footer';
+@import 'partials/icon';
+@import 'partials/landing';
+@import 'partials/page';
+@import 'partials/pattern';
+@import 'partials/sidebar';
+
+// PAGES
+
+// BOX-SIZING + FONT-SIZING PRESETS
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // Scales 1 rem unit to 10px
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  @include text('soleil', 16, 400);
+  width: 100%;
+  margin: 65px 0 0;
+  overflow-x: hidden;
+
+  @include media('>=md') {
+    margin: 0;
+  }
+
+  &.no-sidebar {
+    margin: 0;
+  }
+
+  &.no-scroll {
+    overflow: hidden;
+
+    @include media('>=md') {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+}
+
+// Text Highlight Color
+::selection {
+  background: map-deep-get($colors, blue, lighten-2);
+}
+
+// Accessibility focus outline
+button,
+a {
+  &:focus {
+    outline: 1px dotted rgba(map-deep-get($colors, white, darken-2), 0.7);
+    outline-offset: 2px;
+  }
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+// Hide inline spritesheet
+.svg__spritesheet {
+  display: none;
+}

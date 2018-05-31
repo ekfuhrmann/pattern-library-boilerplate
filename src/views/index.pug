@@ -1,0 +1,35 @@
+
+include layouts/general/_head
+include layouts/includes/_mixins
+
+- var title = 'Example Pattern Library';
+- var description = 'Example User Experience Pattern Library';
+
+doctype html
+html(lang='en-US')
+  head
+    +headContent(title, description)
+    block head
+
+  body.no-sidebar
+    //- SVG Inline Spritesheet
+    .svg__spritesheet
+      include layouts/includes/inline.svg
+
+    //- Content
+    main.pl-landing
+      .pl-landing__content
+        .pl-wrapper
+          .pl-landing__intro
+            h3.pl-landing__header Example
+            h1.pl-landing__title User Experience Pattern Library
+            p.pl-landing__text Last Updated May 31, 2018
+            a.pl-btn__outline(href='./example') View Library
+    //- Scripts
+    if productionMode
+      script(src='assets/javascript/main.min.js')
+    else
+      script(src='assets/javascript/main.js')
+
+    block scripts
+    //- If extra scripts are needed replace here

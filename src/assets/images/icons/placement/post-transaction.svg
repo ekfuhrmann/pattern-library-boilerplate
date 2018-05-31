@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Placement-Type/Post Transaction</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Placement-Type/Post-Transaction">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M20,20 L18,18 L16,20 L14,18 L12,20 L10,18 L8,20 L6,18 L4,20 L4,4 L20,4 L20,20 Z M6,7 L6,9 L14,9 L14,7 L6,7 Z M6,10 L6,12 L14,12 L14,10 L6,10 Z M6,13 L6,15 L14,15 L14,13 L6,13 Z M16,7 L16,9 L18,9 L18,7 L16,7 Z M16,10 L16,12 L18,12 L18,10 L16,10 Z M16,13 L16,15 L18,15 L18,13 L16,13 Z" id="Rectangle" fill="#202022"></path>
+        </g>
+    </g>
+</svg>

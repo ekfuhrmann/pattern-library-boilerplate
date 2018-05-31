@@ -1,0 +1,45 @@
+.pl-landing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: map-deep-get($colors, black, primary);
+}
+
+.pl-landing__content {
+  display: flex;
+  min-height: 100vh;
+  padding: $gridGap * 2 $percentPadding;
+
+  @include media('>=md') {
+    padding: $gridGap * 2 $percentPadding/2;
+  }
+}
+
+.pl-landing__intro {
+  position: relative;
+  margin: auto 0;
+}
+
+.pl-landing__logo {
+  width: 100%;
+  max-width: 90px;
+  height: 25px;
+  fill: map-deep-get($colors, white, primary);
+}
+
+.pl-landing__header {
+  @include text('soleil', 34, 700, map-deep-get($colors, white, primary));
+  margin: 0;
+}
+
+.pl-landing__title {
+  @include text('soleil', 64, 700, map-deep-get($colors, white, primary));
+  margin: $gridGap/2 0 $gridGap;
+  line-height: 1.2;
+}
+
+.pl-landing__text {
+  @include text('soleil', 14, 400, map-deep-get($colors, white, primary));
+  margin: 0 0 $gridGap * 3;
+}

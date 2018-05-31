@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Input/Radio/On</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Input/Radio/On">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M20.1818182,12 C20.1818182,7.48130659 16.5186934,3.81818182 12,3.81818182 C7.48130659,3.81818182 3.81818182,7.48130659 3.81818182,12 C3.81818182,16.5186934 7.48130659,20.1818182 12,20.1818182 C16.5186934,20.1818182 20.1818182,16.5186934 20.1818182,12 Z M2,12 C2,6.4771525 6.4771525,2 12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 Z M12,16.5454545 C14.5103852,16.5454545 16.5454545,14.5103852 16.5454545,12 C16.5454545,9.48961477 14.5103852,7.45454545 12,7.45454545 C9.48961477,7.45454545 7.45454545,9.48961477 7.45454545,12 C7.45454545,14.5103852 9.48961477,16.5454545 12,16.5454545 Z" id="Radio---On" fill-opacity="0.8" fill="#2199F4" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

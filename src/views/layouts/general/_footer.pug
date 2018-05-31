@@ -1,0 +1,24 @@
+footer.pl-footer
+  .pl-footer__box.pl-wrapper
+    for category in categories
+      each link, index in category.links
+        - var cleanedLink = link.substr(0, link.length - 4) //- remove .pug extension
+
+        //- Compare page header to current link
+        if cleanedLink.toLowerCase() === header.toLowerCase()
+          //- get previous link
+          - var prevLink = category.links[index-1];
+          //- get next link
+          - var nextLink = category.links[index+1];
+
+          //- Check that there is a 'previous' section
+          if (index > 0)
+            a.pl-footer__link.prev(href=`./${prevLink.substr(0, prevLink.length - 4).toLowerCase()}`)
+              p.pl-footer__link-text Previous
+              h3.pl-footer__link-page= prevLink.substr(0, prevLink.length - 4).split('-').join(' ')
+
+          //- Check that there is a 'next' section
+          if (index + 1 < category.links.length)
+            a.pl-footer__link.next(href=`./${nextLink.substr(0, nextLink.length - 4).toLowerCase()}`)
+              p.pl-footer__link-text Next
+              h3.pl-footer__link-page= nextLink.substr(0, nextLink.length - 4).split('-').join(' ')

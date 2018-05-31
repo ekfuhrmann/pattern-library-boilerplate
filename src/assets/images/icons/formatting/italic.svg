@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Formatting/Italic</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Formatting/Italic">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M14.7,6 L17,6 C17.6,6 18,5.6 18,5 C18,4.4 17.6,4 17,4 L10,4 C9.4,4 9,4.4 9,5 C9,5.6 9.4,6 10,6 L12.2,6 L10.3,17 L8,17 C7.4,17 7,17.4 7,18 C7,18.6 7.4,19 8,19 L15,19 C15.6,19 16,18.6 16,18 C16,17.4 15.6,17 15,17 L12.8,17 L14.7,6 Z" id="italic" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

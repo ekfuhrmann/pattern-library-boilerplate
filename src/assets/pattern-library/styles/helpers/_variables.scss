@@ -1,0 +1,31 @@
+// Media Query Breakpoint Map
+$breakpoints: (
+  xs: 320px,
+  sm: 650px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1440px
+);
+
+// Settings
+$gridGap: 2rem;
+$sidebar: 225px;
+$percentPadding: 10%;
+$row-width: rem-calc(1400);
+$wrapper-width: $row-width;
+$column-gutter: (
+  xs: 3rem,
+  sm: 4rem,
+  lg: 6rem,
+  xl: 8rem
+);
+$padding: 4rem;
+
+// TODO: delete later
+// // List for generating side modifiers (see ../partials/_padded.scss)
+// $sides: (
+//   top,
+//   right,
+//   bottom,
+//   left
+// );

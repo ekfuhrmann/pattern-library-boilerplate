@@ -1,0 +1,131 @@
+extends ../../templates/_default
+
+block includes
+  include ../../layouts/includes/_mixins
+
+//- Page Head Variables
+block vars
+  - var title = '';
+  - var description = '';
+
+block content
+  -
+    var intro = {
+      //- Header must be same name as file
+      header: 'Typography',
+      //- Each p should be a new object within the copy array
+      copy: [
+        `Voluptate officia ad deserunt nulla laboris ea. Deserunt tempor culpa consectetur ullamco enim consequat id aliquip ullamco nostrud sit ad. Sint proident ex ex sit sit ipsum voluptate consectetur id quis. Sint ut laborum aliquip nisi sint anim eiusmod culpa sunt consectetur commodo. Cupidatat eiusmod dolor enim officia aliqua.`,
+      ]
+    }
+  +intro(intro.header, intro.copy)
+
+  .pl-page__content
+    .pl-wrapper
+
+      //- Start Typography Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Font Stack
+          p
+            | Sans-serif fonts are optimal for legibility and contrast.
+            br
+            strong Soleil
+            | Esse voluptate exercitation nisi deserunt tempor..
+            br
+            strong Source Sans Pro
+            | Enim nisi nostrud consequat officia nostrud officia amet anim cillum minim quis excepteur cupidatat aute..
+
+        -
+          var blockContent = {
+          hasMobile: false,
+          // keep the following tab index so that spacing is true to markup
+          previewCode:
+          ``,
+          desktopImages: [
+            {
+              image: 'typography/typography-stack.jpg',
+              imageDescription: 'Pariatur do eu minim aliquip tempor exercitation laborum cupidatat culpa.'
+            }
+          ],
+          mobileImages: [
+            {
+              image: '',
+              imageDescription: ''
+            }
+          ],
+          previewBgColor: 'white' //- (white [default], offwhite, gray)
+          }
+
+        +pattern-preview-block(blockContent.hasMobile, blockContent.previewCode, blockContent.desktopImages, blockContent.mobileImages, blockContent.previewBgColor)
+
+      //- Start Typography Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Usage
+          p Amet deserunt enim in quis enim ad nulla in quis. Et ullamco sunt aliquip eiusmod culpa ipsum in cupidatat cupidatat cupidatat exercitation. Anim sit fugiat fugiat consequat. Excepteur ex eiusmod nostrud laborum ut laboris ex. Aliquip labore laboris adipisicing sint aute cupidatat amet irure.
+
+        +pattern-typography(
+          'Display',
+          ['Font size: 42px',
+          'Font weights: 400/Regular and 700/Bold',
+          'Line height: 54px',
+          'Colors: Primary Blue, Black, White, Gray 1, Gray 3'],
+          ['Rarely used, but option for large text application']
+        )
+
+        +pattern-typography(
+          'Headline',
+          ['Font size: 28px',
+          'Font weights: 400/Regular and 700/Bold',
+          'Line height: 36px',
+          'Colors: Primary Blue, Black, White, Gray 1, Gray 3'],
+          ['Page level headlines and short text']
+        )
+
+        +pattern-typography(
+          'Title',
+          ['Font size: 20px',
+          'Font weights: 400/Regular and 700/Bold',
+          'Line height: 32px',
+          'Colors: Primary Blue, Black, White, Gray 1, Gray 3'],
+          ['Sidebar labels and shorter text']
+        )
+
+        +pattern-typography(
+          'Subheader',
+          ['Font size: 16px',
+          'Font weights: 400/Regular and 700/Bold',
+          'Line height: 24px',
+          'Colors: Primary Blue, Black, White, Gray 1, Gray 3'],
+          ['Anything from subheader to long description']
+        )
+
+        +pattern-typography(
+          'Body',
+          ['Font size: 14px',
+          'Font weights: 400/Regular and 700/Bold',
+          'Line height: 18px',
+          'Colors: Primary Blue, Black, White, Gray 1, Gray 3'],
+          ['Button labels, input fields and long from text']
+        )
+
+        +pattern-typography(
+          'Caption',
+          ['Font size: 12px',
+          'Letter spacing: 0.86px',
+          'Font weights: 400/Regular and 700/Bold',
+          'Line height: 16px',
+          'Text transform: uppercase',
+          'Colors: Primary Blue, Black, White, Gray 1, Gray 3'],
+          ['Metric labels and meta-data']
+        )
+
+        +pattern-typography(
+          'Small',
+          ['Font size: 10px',
+          'Font weights: 400/Regular and 700/Bold',
+          'Line height: 16px',
+          'Colors: Primary Blue, Black, White, Gray 1, Gray 3'],
+          ['Data labels and micro copy']
+        )

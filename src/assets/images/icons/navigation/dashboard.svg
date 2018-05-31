@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Navigation/Dashboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Navigation/Dashboard">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M4.6515,13.5 C4.5525,13.0155 4.5,12.51375 4.5,12 C4.5,7.8645 7.8645,4.5 12,4.5 C16.1355,4.5 19.5,7.8645 19.5,12 C19.5,12.51375 19.4475,13.0155 19.3485,13.5 L13.2135,13.5 L15.67125,8.58525 L14.32875,7.91475 L11.5365,13.5 L4.6515,13.5 Z M12,21 C16.96275,21 21,16.96275 21,12 C21,7.03725 16.96275,3 12,3 C7.03725,3 3,7.03725 3,12 C3,16.96275 7.03725,21 12,21 Z" id="dash" fill="#202022"></path>
+        </g>
+    </g>
+</svg>

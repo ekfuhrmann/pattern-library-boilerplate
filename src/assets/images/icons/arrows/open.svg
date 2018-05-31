@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Arrow/Accordian/Open</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Arrow/Accordian/Open">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M18.71,14.29 L12.71,8.29 C12.53,8.11 12.28,8 12,8 C11.72,8 11.47,8.11 11.29,8.29 L5.29,14.29 C4.89787785,14.6821222 4.89787786,15.3178778 5.29000002,15.71 C5.68212219,16.1021221 6.31787782,16.1021222 6.71,15.71 L12,10.41 L17.29,15.7 C17.47,15.89 17.72,16 18,16 C18.4048395,15.9994155 18.7696363,15.7555082 18.9248781,15.381616 C19.0801198,15.0077239 18.9953661,14.5771611 18.71,14.29 Z" id="open" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

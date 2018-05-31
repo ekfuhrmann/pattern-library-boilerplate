@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Action/Move</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Action/Move">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M4.5,15 C3.11928813,15 2,13.8807119 2,12.5 C2,11.1192881 3.11928813,10 4.5,10 C5.88071187,10 7,11.1192881 7,12.5 C7,13.8807119 5.88071187,15 4.5,15 Z M18.5,15 C17.1192881,15 16,13.8807119 16,12.5 C16,11.1192881 17.1192881,10 18.5,10 C19.8807119,10 21,11.1192881 21,12.5 C21,13.8807119 19.8807119,15 18.5,15 Z M11.5,15 C10.1192881,15 9,13.8807119 9,12.5 C9,11.1192881 10.1192881,10 11.5,10 C12.8807119,10 14,11.1192881 14,12.5 C14,13.8807119 12.8807119,15 11.5,15 Z" id="move" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

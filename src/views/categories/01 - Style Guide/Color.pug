@@ -1,0 +1,109 @@
+extends ../../templates/_default
+
+block includes
+  include ../../layouts/includes/_mixins
+
+//- Page Head Variables
+block vars
+  - var title = '';
+  - var description = '';
+
+block content
+  -
+    var intro = {
+      header: 'Color',
+      copy: [
+        `Each color should be unique and hold a single consistent meaning across all facets of the platform to avoid confusion.`,
+        `In cases where color is intended to convey factual information (such as status), color indicators should be paired with text and/or iconography as well. To assist the colorblind, those on inconsistent or poorly calibrated displays, or those simply in a rush, meaning should never be conveyed by color alone.`
+      ]
+    }
+  +intro(intro.header, intro.copy)
+
+  .pl-page__content
+    .pl-wrapper
+
+      //- Start Color Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Primary Color Palette
+          p Primary blue should be used on primary actions and to indicate interactivity and data. Black is used for the side navigation, text, and a base for some iconography. White is used to showcase text and the global navigation.
+
+        .pl-pattern__grid
+          +pattern-color('Primary Blue', '#2199F4')
+          +pattern-color('Black', '#202022')
+          +pattern-color('White', '#FFFFFF')
+
+      //- Start Color Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Neutrals
+          p Neutral colors make up the meat of the platform and are used for backgrounds, text, and to show disabled status.
+
+        .pl-pattern__grid
+          +pattern-color('Modal', '#202022 - 90% Opacity', 0.9)
+          +pattern-color('Cool Gray 0', '#4C4E51')
+          +pattern-color('Cool Gray 1', '#5F656C')
+          +pattern-color('Cool Gray 2', '#ACB5BE')
+          +pattern-color('Cool Gray 3', '#EAEBED')
+          +pattern-color('Cool Gray 4', '#F6F5F5')
+
+      //- Start Color Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Status
+          p The status palette is created to highlight errors and states that may need the users’ attention. Status colors should only be used with their specific purpose and in small applications.
+
+        .pl-pattern__grid
+          +pattern-color('Warning - Text/Small', '#BC362B')
+          +pattern-color('Warning - Fill/Large', '#F04032')
+          +pattern-color('Pending', '#EADC47')
+          +pattern-color('Positive/Live', '#04B07C')
+
+      //- Start Color Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Extended Palette - Data Visualization
+          p Blue is the primary data visualization color. Additional warm and cool hues are used to subsidize blue as needed. Color palettes can be used to express diverging, sequential, and qualitative values.
+
+        .pl-pattern__grid
+          +pattern-color('Primary Blue 1', '#0058AD')
+          +pattern-color('Primary Blue 2', '#2199F4')
+          +pattern-color('Primary Blue 3', '#79C1FD')
+          +pattern-color('Primary Blue 4', '#CCE8FE')
+          +pattern-color('Primary Blue 5', '#E6F4FF')
+
+        .pl-pattern__grid
+          +pattern-color('Purple 1', '#323380')
+          +pattern-color('Purple 2', '#5154D1')
+          +pattern-color('Purple 3', '#7577EB')
+          +pattern-color('Purple 4', '#B0B0FF')
+          +pattern-color('Purple 5', '#D8D8F0')
+
+        .pl-pattern__grid
+          +pattern-color('Beetroot 1', '#B51E6D')
+          +pattern-color('Beetroot 2', '#D861A4')
+          +pattern-color('Beetroot 3', '#F699C2')
+          +pattern-color('Beetroot 4', '#F4CCE0')
+          +pattern-color('Beetroot 5', '#F5E6ED')
+
+        .pl-pattern__grid
+          +pattern-color('Orange 1', '#D65E0F')
+          +pattern-color('Orange 2', '#F2843A')
+          +pattern-color('Orange 3', '#FAAF7D')
+          +pattern-color('Orange 4', '#FAD4BB')
+          +pattern-color('Orange 5', '#FAEBE1')
+          +pattern-color('Orange 6', '#36cb9c')
+
+        .pl-pattern__grid
+          +pattern-color('Yellow 1', '#F8D426')
+          +pattern-color('Yellow 2', '#FAE370')
+          +pattern-color('Yellow 3', '#F7FF80')
+          +pattern-color('Yellow 4', '#F8FCBD')
+          +pattern-color('Yellow 5', '#FBFCE3')
+
+        .pl-pattern__grid
+          +pattern-color('Green 1', '#0A6830')
+          +pattern-color('Green 2', '#49AB44')
+          +pattern-color('Green 3', '#9DE0BF')
+          +pattern-color('Green 4', '#C6F7DF')
+          +pattern-color('Green 5', '#E3FCF0')

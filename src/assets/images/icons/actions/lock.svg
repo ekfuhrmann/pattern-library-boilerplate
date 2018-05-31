@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Action/Lock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Action/Lock">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M17.93,11 L16,11 L16,6.99 C16,4.78 14.21,2.99 12,2.99 C9.79,2.99 8,4.78 8,6.99 L8,11 L5.93,11 C5.38,11 5,11.44 5,11.99 L5,19.99 C5,20.54 5.38,21 5.93,21 L17.93,21 C18.48,21 19,20.54 19,19.99 L19,11.99 C19,11.44 18.48,11 17.93,11 Z M10,11 L10,6.99 C10,5.89 10.9,4.99 12,4.99 C13.1,4.99 14,5.89 14,6.99 L14,11 L10,11 Z" id="lock" fill="#202022"></path>
+        </g>
+    </g>
+</svg>

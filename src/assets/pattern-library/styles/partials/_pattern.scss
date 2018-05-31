@@ -1,0 +1,500 @@
+.pl-pattern {
+  + .pl-pattern {
+    margin-top: $gridGap * 4;
+  }
+}
+
+.pl-pattern__content {
+  max-width: 650px;
+
+  // WYSIWYG Styles
+  h1 {
+    @include text('soleil', 48, 400, map-deep-get($colors, black, primary));
+    margin: 0;
+  }
+
+  h3 {
+    @include text('soleil', 32, 400, map-deep-get($colors, black, primary));
+    margin: 0;
+  }
+
+  h4 {
+    @include text('soleil', 24, 400, map-deep-get($colors, black, primary));
+    margin: $gridGap * 3 0 0;
+  }
+
+  p {
+    @include text('soleil', 14, 400, map-deep-get($colors, black, lighten-2));
+    margin: 0;
+    line-height: 1.5;
+
+    + p {
+      margin-top: $gridGap;
+    }
+
+    + h3 {
+      margin-top: $gridGap * 4;
+    }
+  }
+}
+
+.pl-pattern__preview-block {
+  width: 100%;
+  margin-top: $gridGap;
+  overflow: hidden;
+  background-color: map-deep-get($colors, white, primary);
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px darken(map-deep-get($colors, white, primary), 20%);
+
+  @include media('>=md') {
+    &.has-mobile {
+      margin-top: 0;
+    }
+  }
+
+  // Element bg color modifiers
+  &.offwhite {
+    background-color: map-deep-get($colors, white, darken-1);
+    box-shadow: 0 0 0 1px darken(map-deep-get($colors, white, darken-1), 20%);
+  }
+
+  &.gray {
+    background-color: map-deep-get($colors, black, lighten-1);
+    box-shadow: 0 0 0 1px darken(map-deep-get($colors, black, lighten-1), 20%);
+  }
+}
+
+.pl-pattern__preview-toggle {
+  display: none;
+
+  @include media('>=md') {
+    @include text('soleil', 14, 400, map-deep-get($colors, black, lighten-2));
+    display: inline-block;
+    margin: $gridGap $gridGap/4 0;
+    padding: $gridGap/4 $gridGap/2 calc(#{$gridGap/4} + 2px); // calc in bottom underline
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 300ms;
+
+    &.is-active {
+      color: map-deep-get($colors, blue, primary);
+      font-weight: 700;
+      box-shadow: inset 0 -2px 0 0 map-deep-get($colors, blue, primary);
+
+      &:hover,
+      &:focus {
+        box-shadow: inset 0 -2px 0 0 map-deep-get($colors, blue, primary);
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: map-deep-get($colors, white, darken-2);
+      box-shadow: inset 0 -2px 0 0 map-deep-get($colors, black, lighten-2);
+    }
+  }
+}
+
+.pl-pattern__preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  padding: $percentPadding;
+
+  @include media('>=md') {
+    padding: $percentPadding $percentPadding/2;
+  }
+}
+
+.pl-pattern__preview--desktop,
+.pl-pattern__preview--mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pl-pattern__preview--mobile {
+  display: none;
+  max-width: 375px;
+}
+
+.pl-pattern__image {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+
+  + .pl-pattern__image,
+  &:not(:first-child) {
+    margin-top: $gridGap * 2;
+  }
+}
+
+.pl-pattern__code-preview {
+  display: block;
+}
+
+.pl-pattern__code-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 200px;
+  padding: $gridGap * 1.5 $gridGap * 2;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #282c34;
+  transition: all 300ms ease-out;
+
+  pre {
+    margin: 0;
+    padding: $gridGap/2 0;
+    overflow: hidden;
+  }
+
+  code {
+    margin-bottom: $gridGap;
+    padding: 0 0 $gridGap/2;
+    font-family: 'Fira Mono', monospace;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+      background-color: #282c34;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: lighten(#282c34, 7%);
+      border-radius: 10px;
+    }
+
+    &::selection,
+    span::selection {
+      background: rgba(map-deep-get($colors, white, primary), 0.1);
+    }
+  }
+}
+
+.pl-pattern__code-copy {
+  @include position(absolute, $gridGap/2, $gridGap/2);
+  z-index: 1;
+  color: map-deep-get($colors, black, lighten-2);
+  user-select: none;
+}
+
+.pl-pattern__code-fade {
+  @include position(absolute, null, 0, 0, 0);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  background-image: linear-gradient(
+    to top,
+    #282c34 15%,
+    rgba(#282c34, 0.9) 20%,
+    rgba(#282c34, 0) 80%
+  );
+  visibility: visible;
+  opacity: 1;
+  transition: all 400ms;
+
+  .is-expanded & {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.pl-pattern__code-btn,
+.pl-pattern__grid-btn {
+  padding: $gridGap/4 $gridGap/2;
+
+  &.copy {
+    z-index: 1;
+    user-select: none;
+  }
+}
+
+.pl-pattern__code-btn {
+  &.copy {
+    @include position(absolute, $gridGap/2, $gridGap/2);
+    color: map-deep-get($colors, black, lighten-2);
+    transition: background-color 300ms;
+  }
+
+  &.expand {
+    margin: auto auto $gridGap;
+    color: map-deep-get($colors, white, primary);
+    transform: translateY(0);
+    visibility: vissible;
+    opacity: 1;
+    transition: transform 500ms ease-out 100ms, opacity 400ms 100ms,
+      visibility 0ms, background-color 300ms;
+
+    .is-expanded & {
+      transform: translateY(20px);
+      visibility: hidden;
+      opacity: 0;
+      transition: transform 400ms, opacity 400ms, visibility 0ms 400ms,
+        background-color 300ms;
+    }
+  }
+
+  &.collapse {
+    @include position(absolute, null, auto, $gridGap, auto);
+    align-self: center;
+    margin: 0 auto;
+    color: map-deep-get($colors, black, lighten-2);
+    transform: translateY(-20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 400ms, opacity 400ms, visibility 0ms 400ms,
+      background-color 300ms;
+    user-select: none;
+
+    .is-expanded & {
+      transform: translateY(0);
+      visibility: visible;
+      opacity: 1;
+      transition: transform 500ms ease-out 100ms, opacity 400ms 100ms,
+        visibility 0ms, background-color 300ms;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: lighten(#282c34, 5%);
+    outline: none;
+  }
+}
+
+.pl-pattern__iframe {
+  width: 100%;
+  max-width: 375px;
+  height: 0;
+  border: none;
+}
+
+// Grid
+.pl-pattern__grid-btn {
+  &.copy {
+    align-self: center;
+    color: map-deep-get($colors, white, primary);
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 0 0 2px map-deep-get($colors, white, primary);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms;
+
+    .pl-pattern__grid-item.pl-colors:hover & {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &:hover,
+    &:focus {
+      color: map-deep-get($colors, black, primary);
+      background-color: map-deep-get($colors, white, primary);
+      outline: none;
+    }
+
+    &.alt {
+      color: map-deep-get($colors, black, primary);
+      box-shadow: 0 0 0 2px map-deep-get($colors, black, primary);
+
+      &:hover,
+      &:focus {
+        color: map-deep-get($colors, white, primary);
+        background-color: map-deep-get($colors, black, primary);
+      }
+    }
+  }
+}
+
+.pl-pattern__grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin: $gridGap #{-$gridGap/2};
+}
+
+.pl-pattern__grid-item {
+  margin: $gridGap/2;
+  padding: 5px;
+  overflow: hidden;
+  background-color: map-deep-get($colors, white, primary);
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.15),
+      0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &.pl-colors {
+    flex: 0 0 calc(50% - #{$gridGap});
+    width: calc(50% - #{$gridGap});
+    cursor: pointer;
+
+    @include media('>=sm') {
+      flex: 0 0 calc(33.333% - #{$gridGap});
+      width: calc(33.333% - #{$gridGap});
+    }
+  }
+
+  &.pl-icons {
+    flex: 0 0 calc(50% - #{$gridGap});
+    width: calc(50% - #{$gridGap});
+    text-decoration: none;
+
+    @include media('>=sm') {
+      flex: 0 0 calc(33.333% - #{$gridGap});
+      width: calc(33.333% - #{$gridGap});
+    }
+
+    @include media('>=lg') {
+      flex: 0 0 calc(20% - #{$gridGap});
+      width: calc(20% - #{$gridGap});
+    }
+  }
+}
+
+.pl-pattern__grid-sample {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 108px;
+  background-color: map-deep-get($colors, white, darken-2);
+  border-radius: 4px 4px 0 0;
+
+  img.pl-inverted {
+    filter: invert(0.1);
+  }
+}
+
+.pl-pattern__grid-content {
+  padding: $gridGap $gridGap * 0.75 $gridGap * 0.75;
+}
+
+.pl-pattern__grid-text {
+  @include text('soleil', 14, 400, map-deep-get($colors, black, lighten-2));
+  margin: 0;
+
+  &.pl-hex {
+    font-weight: 700;
+  }
+}
+
+// Typography
+.pl-pattern__typography {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: $gridGap * 4;
+
+  + .pl-pattern__typography {
+    margin-top: $gridGap * 2;
+  }
+
+  @include media('>=md') {
+    flex-direction: row;
+  }
+}
+
+.pl-pattern__typography-sample {
+  margin-bottom: $gridGap;
+  color: map-deep-get($colors, black, primary);
+  font-family: 'Soleil', sans-serif;
+
+  @include media('>=md') {
+    flex: 1 1 220px;
+    margin-bottom: 0;
+    padding-right: $gridGap * 1.5;
+  }
+
+  // Sample typography declarations (prepend with .pl-)
+  &.pl-display {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 54px;
+  }
+
+  &.pl-headline {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  &.pl-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &.pl-subheader {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &.pl-body {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &.pl-caption {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.86px;
+    text-transform: uppercase;
+  }
+
+  &.pl-small {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+
+.pl-pattern__typography-content {
+  flex: 1 1 calc(100% - 220px);
+  width: calc(100% - 220px);
+
+  &::after {
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin-top: $gridGap * 2;
+    background-color: map-deep-get($colors, white, darken-2);
+    content: '';
+
+    .pl-pattern__typography:last-of-type & {
+      content: none;
+    }
+  }
+}
+
+.pl-pattern__typography-list {
+  @include text('soleil', 14);
+  margin: 0;
+  padding: 0;
+  color: map-deep-get($colors, black, primary);
+  font-weight: 700;
+  list-style: none;
+
+  + .pl-pattern__typography-list {
+    margin-top: $gridGap * 1.5;
+  }
+}
+
+.pl-pattern__typography-list-item {
+  padding: $gridGap/2 0 0;
+  color: map-deep-get($colors, black, lighten-2);
+  font-weight: 400;
+}

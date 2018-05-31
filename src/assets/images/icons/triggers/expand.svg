@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Widget Type/Expand</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Widget-Type/Expand">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M20,4 L20,8.66666667 L18.138,6.80466667 L15.8046667,9.138 L14.862,8.19533333 L17.1953333,5.862 L15.3333333,4 L20,4 Z M8.66666667,4 L6.80466667,5.862 L9.138,8.19533333 L8.19533333,9.138 L5.862,6.80466667 L4,8.66666667 L4,4 L8.66666667,4 Z M18.138,17.1953333 L20,15.3333333 L20,20 L15.3333333,20 L17.1953333,18.138 L14.862,15.8046667 L15.8046667,14.862 L18.138,17.1953333 Z M8.19533333,14.862 L9.138,15.8046667 L6.80466667,18.138 L8.66666667,20 L4,20 L4,15.3333333 L5.862,17.1953333 L8.19533333,14.862 Z M12,14.6666667 C10.5293333,14.6666667 9.33333333,13.4706667 9.33333333,12 C9.33333333,10.5293333 10.5293333,9.33333333 12,9.33333333 C13.4706667,9.33333333 14.6666667,10.5293333 14.6666667,12 C14.6666667,13.4706667 13.4706667,14.6666667 12,14.6666667 Z" id="Combined-Shape" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

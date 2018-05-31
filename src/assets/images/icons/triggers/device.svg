@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Trigger/Device</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16.1666667,4 L7.83333333,4 C7.375,4 7,4.3825 7,4.85 L7,20.15 C7,20.6175 7.375,21 7.83333333,21 L16.1666667,21 C16.625,21 17,20.6175 17,20.15 L17,4.85 C17,4.3825 16.625,4 16.1666667,4 Z M12,20.15 C11.5416667,20.15 11.1666667,19.7675 11.1666667,19.3 C11.1666667,18.8325 11.5416667,18.45 12,18.45 C12.4583333,18.45 12.8333333,18.8325 12.8333333,19.3 C12.8333333,19.7675 12.4583333,20.15 12,20.15 Z M15.3333333,17.6 L8.66666667,17.6 L8.66666667,6.55 L15.3333333,6.55 L15.3333333,17.6 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Trigger/Device">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Shape" fill="#202022" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

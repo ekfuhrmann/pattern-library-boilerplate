@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Arrow/Down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Arrow/Down">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M17,9.75 C17,9.3375 16.6625,9 16.25,9 L8.75,9 C8.3375,9 8,9.3375 8,9.75 C8,9.93 8.075,10.095 8.18,10.2225 L8.1725,10.23 L11.9225,14.73 L11.93,14.7225 C12.0725,14.8875 12.2675,15 12.5,15 C12.7325,15 12.9275,14.8875 13.07,14.7225 L13.0775,14.73 L16.8275,10.23 L16.82,10.2225 C16.925,10.095 17,9.93 17,9.75 Z" id="down" fill="#202022" fill-rule="nonzero" transform="translate(12.500000, 12.000000) rotate(-360.000000) translate(-12.500000, -12.000000) "></path>
+        </g>
+    </g>
+</svg>

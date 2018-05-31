@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Targeting/mobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Targeting/mobile">
+            <rect id="Bounding-Box" x="0" y="0" width="72" height="72"></rect>
+            <path d="M44.25,12 L27.75,12 C25.68225,12 24,14.243 24,17 L24,53 C24,55.757 25.68225,58 27.75,58 L44.25,58 C46.31775,58 48,55.757 48,53 L48,17 C48,14.243 46.31775,12 44.25,12 Z M36,56 C34.895,56 34,55.105 34,54 C34,52.895 34.895,52 36,52 C37.105,52 38,52.895 38,54 C38,55.105 37.105,56 36,56 Z M45,48.8333333 C45,49.4773333 44.664,50 44.25,50 L27.75,50 C27.336,50 27,49.4773333 27,48.8333333 L27,16.1666667 C27,15.5226667 27.336,15 27.75,15 L44.25,15 C44.664,15 45,15.5226667 45,16.1666667 L45,48.8333333 Z" id="Shape" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

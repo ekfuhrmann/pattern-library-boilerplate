@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Meta Data/internal</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Meta-Data/internal">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M16.71,11.29 L11.71,6.29 C11.3178778,5.89787783 10.6821222,5.89787783 10.29,6.29 C9.89787783,6.68212217 9.89787783,7.31787783 10.29,7.71 L13.59,11 L3,11 C2.45,11 2,11.45 2,12 C2,12.55 2.45,13 3,13 L13.59,13 L10.3,16.29 C10.11,16.47 10,16.72 10,17 C10.0005845,17.4048395 10.2444918,17.7696363 10.618384,17.9248781 C10.9922761,18.0801198 11.4228389,17.9953661 11.71,17.71 L16.71,12.71 C16.89,12.53 17,12.28 17,12 C17,11.72 16.89,11.47 16.71,11.29 Z M13,4 L20,4 L20,20 L13,20 C12.45,20 12,20.45 12,21 C12,21.55 12.45,22 13,22 L21,22 C21.55,22 22,21.55 22,21 L22,3 C22,2.45 21.55,2 21,2 L13,2 C12.45,2 12,2.45 12,3 C12,3.55 12.45,4 13,4 Z" id="internal" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

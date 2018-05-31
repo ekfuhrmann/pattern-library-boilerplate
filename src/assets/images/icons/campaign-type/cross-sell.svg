@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Campaign Type/Cross-Sell</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Campaign-Type/Cross-Sell">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M7.115,10.638 C5.385,9.132 3.513,8 1,8 L0,8 L0,6 L1,6 C4.22,6 6.522,7.434 8.543,9.219 C8.319,9.44 8.097,9.661 7.879,9.879 C7.618,10.14 7.365,10.392 7.115,10.638 Z M20,8 L19,8 C15.414,8 13.128,10.286 10.707,12.707 C8.105,15.31 5.414,18 1,18 L0,18 L0,16 L1,16 C4.586,16 6.872,13.714 9.293,11.293 C11.895,8.69 14.586,6 19,6 L20,6 L20,3 L24,7 L20,11 L20,8 Z M20,16 L20,13 L24,17 L20,21 L20,18 L19,18 C15.78,18 13.478,16.566 11.457,14.781 C11.681,14.56 11.903,14.339 12.121,14.121 C12.382,13.86 12.635,13.608 12.885,13.362 C14.615,14.868 16.487,16 19,16 L20,16 Z" id="cross-sell" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

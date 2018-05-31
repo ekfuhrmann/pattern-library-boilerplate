@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Metrics/Payment</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Metrics/Payment">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M0,11.25 L0,19.5 C0,20.32875 0.67125,21 1.5,21 L22.5,21 C23.32875,21 24,20.32875 24,19.5 L24,11.25 L0,11.25 Z M9.75,17.25 L3,17.25 L3,15.75 L9.75,15.75 L9.75,17.25 Z M21,17.25 L18,17.25 L18,15.75 L21,15.75 L21,17.25 Z M24,8.25 L0,8.25 L0,4.5 C0,3.67125 0.67125,3 1.5,3 L22.5,3 C23.32875,3 24,3.67125 24,4.5 L24,8.25 Z" id="payment" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

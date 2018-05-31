@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Arrow/Back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Arrow/Back">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M20,10.9975695 L6.41,10.9975695 L10.7,6.70930684 C10.89,6.52937974 11,6.27948098 11,5.99959438 C10.9994155,5.59491888 10.7555082,5.23026977 10.381616,5.07509088 C10.0077239,4.91991199 9.57716111,5.00463137 9.29,5.28988191 L3.29,11.287452 C3.11,11.4673791 3,11.7172779 3,11.9971645 C3,12.2770511 3.11,12.5269498 3.29,12.7068769 L9.29,18.704447 C9.68212217,19.0964104 10.3178778,19.0964104 10.71,18.704447 C11.1021222,18.3124837 11.1021222,17.6769855 10.71,17.2850221 L6.41,12.9967595 L20,12.9967595 C20.55,12.9967595 21,12.5469417 21,11.9971645 C21,11.4473872 20.55,10.9975695 20,10.9975695 Z" id="back" fill="#202022"></path>
+        </g>
+    </g>
+</svg>

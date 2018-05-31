@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Targeting/desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Targeting/desktop">
+            <rect id="Bounding-Box" x="0" y="0" width="72" height="72"></rect>
+            <path d="M62,7 L10,7 C7.243,7 5,9.243 5,12 L5,50 C5,52.757 7.243,55 10,55 L62,55 C64.757,55 67,52.757 67,50 L67,12 C67,9.243 64.757,7 62,7 Z M65,43 L7,43 L7,12 C7,10.346 8.346,9 10,9 L62,9 C63.654,9 65,10.346 65,12 L65,43 Z M50,63 C50.552,63 51,63.448 51,64 C51,64.552 50.552,65 50,65 L22,65 C21.448,65 21,64.552 21,64 C21,63.448 21.448,63 22,63 L29,63 L29,57 L43,57 L43,63 L50,63 Z M36,16 C37.1045695,16 38,15.1045695 38,14 C38,12.8954305 37.1045695,12 36,12 C34.8954305,12 34,12.8954305 34,14 C34,15.1045695 34.8954305,16 36,16 Z" id="Shape" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

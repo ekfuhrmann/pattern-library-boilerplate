@@ -1,0 +1,16 @@
+nav.pl-sidebar
+  .pl-sidebar__header
+    a.pl-sidebar__header-link(href='./')
+      h1.pl-sidebar__title Example
+        span.pl-sidebar__label UXPL
+    button.pl-sidebar__toggle
+      span.pl-sidebar__toggle-box
+        span.pl-sidebar__toggle-inner
+  ul.pl-sidebar__nav
+    each category in categories
+      li.pl-sidebar__category= category.title
+        each link in category.links
+          - var cleanedLink = link.substr(0, link.length - 4) // remove .pug extension
+
+          li.pl-sidebar__item
+            a.pl-sidebar__item-link(href=`./${cleanedLink.toLowerCase()}`)= cleanedLink.split('-').join(' ')

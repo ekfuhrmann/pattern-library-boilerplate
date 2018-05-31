@@ -1,0 +1,60 @@
+$colors: (
+  black:
+    (
+      primary: #202022,
+      lighten-1: #4c4e51,
+      lighten-2: #5f656c,
+      lighten-3: #acb5be
+    ),
+  white: (primary: #fff, darken-1: #f6f5f5, darken-2: #eaebed),
+  beetroot:
+    (
+      darken: #b51e6d,
+      primary: #d861a4,
+      lighten-1: #f699c2,
+      lighten-2: #f4cce0,
+      lighten-3: #f5e6ed
+    ),
+  orange:
+    (
+      darken: #d65e0f,
+      primary: #f2843a,
+      lighten-1: #faaf7d,
+      lighten-2: #fad4bb,
+      lighten-3: #faebe1
+    ),
+  yellow:
+    (
+      darken: #f8d426,
+      primary: #fae370,
+      lighten-1: #f7ff80,
+      lighten-2: #f8fcbd,
+      lighten-3: #fbfce3
+    ),
+  green:
+    (
+      darken: #0a6830,
+      primary: #49ab44,
+      lighten-1: #9de0bf,
+      lighten-2: #c6f7df,
+      lighten-3: #e3fcf0
+    ),
+  blue:
+    (
+      darken: #0058ad,
+      primary: #2199f4,
+      lighten-1: #79c1fd,
+      lighten-2: #cce8fe,
+      lighten-3: #e6f4ff
+    ),
+  purple:
+    (
+      darken: #323380,
+      primary: #5154d1,
+      lighten-1: #7577eb,
+      lighten-2: #b0b0ff,
+      lighten-3: #d8d8f0
+    )
+);
+
+// TODO: Move color map to variables for pattern library

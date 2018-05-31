@@ -1,0 +1,274 @@
+extends ../../templates/_default
+
+block includes
+  include ../../layouts/includes/_mixins
+
+//- Page Head Variables
+block vars
+  - var title = '';
+  - var description = '';
+
+block content
+  -
+    var intro = {
+      header: 'Iconography',
+      copy: [
+        `Icons should be unique and clearly differentiated from one another with clear literal or metaphorical ties to the concepts they represent. Iconography works with text to clearly and rapidly convey concepts, whereas more advanced users may be able to rely on iconography alone. In areas with less space, such as collapsed navigation bars, icons may be used alone. However, wherever space allows, icons should always be paired with their text counterparts.`,
+      ]
+    }
+  +intro(intro.header, intro.copy)
+
+  //- +pattern-icon(<section>, <file name>, <invert = false>)
+
+  //- Invert by default is set to false. Should the icon blend
+  //- in with the background color, set third variable to 'true'
+
+  .pl-page__content
+    .pl-wrapper
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Actions
+
+        .pl-pattern__grid
+          +pattern-icon('actions', 'add.svg')
+          +pattern-icon('actions', 'block.svg')
+          +pattern-icon('actions', 'change.svg')
+          +pattern-icon('actions', 'close.svg')
+          +pattern-icon('actions', 'compare.svg')
+          +pattern-icon('actions', 'connect.svg')
+          +pattern-icon('actions', 'delete.svg')
+          +pattern-icon('actions', 'duplicate.svg')
+          +pattern-icon('actions', 'edit.svg')
+          +pattern-icon('actions', 'export.svg')
+          +pattern-icon('actions', 'import.svg')
+          +pattern-icon('actions', 'lock.svg')
+          +pattern-icon('actions', 'merge.svg')
+          +pattern-icon('actions', 'modified.svg')
+          +pattern-icon('actions', 'move.svg')
+          +pattern-icon('actions', 'new-audience.svg')
+          +pattern-icon('actions', 'pin.svg')
+          +pattern-icon('actions', 'preview.svg')
+          +pattern-icon('actions', 'rename.svg')
+          +pattern-icon('actions', 'reorder.svg')
+          +pattern-icon('actions', 'reset.svg')
+          +pattern-icon('actions', 'save.svg')
+          +pattern-icon('actions', 'calendar.svg')
+          +pattern-icon('actions', 'search.svg')
+          +pattern-icon('actions', 'segments.svg')
+          +pattern-icon('actions', 'select-all.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Arrows
+
+        .pl-pattern__grid
+          +pattern-icon('arrows', 'close.svg')
+          +pattern-icon('arrows', 'open.svg')
+          +pattern-icon('arrows', 'back.svg')
+          +pattern-icon('arrows', 'forward.svg')
+          +pattern-icon('arrows', 'decrease.svg')
+          +pattern-icon('arrows', 'increase.svg')
+          +pattern-icon('arrows', 'down.svg')
+          +pattern-icon('arrows', 'up.svg')
+          +pattern-icon('arrows', 'right.svg')
+          +pattern-icon('arrows', 'left.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Campaign Type
+
+        .pl-pattern__grid
+          +pattern-icon('campaign-type', 'app.svg')
+          +pattern-icon('campaign-type', 'calendar-subscription.svg')
+          +pattern-icon('campaign-type', 'cross-sell.svg')
+          +pattern-icon('campaign-type', 'email.svg')
+          +pattern-icon('campaign-type', 'market-research.svg')
+          +pattern-icon('campaign-type', 'phone.svg')
+          +pattern-icon('campaign-type', 'reports.svg')
+          +pattern-icon('campaign-type', 'traffic.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Cursors
+
+        .pl-pattern__grid
+          +pattern-icon('cursors', 'default.svg')
+          +pattern-icon('cursors', 'text.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Formatting
+
+        .pl-pattern__grid
+          +pattern-icon('formatting', 'align-left.svg')
+          +pattern-icon('formatting', 'align-right.svg')
+          +pattern-icon('formatting', 'bold.svg')
+          +pattern-icon('formatting', 'bullet-list.svg')
+          +pattern-icon('formatting', 'code.svg')
+          +pattern-icon('formatting', 'indent-left.svg')
+          +pattern-icon('formatting', 'indent-right.svg')
+          +pattern-icon('formatting', 'italic.svg')
+          +pattern-icon('formatting', 'link.svg')
+          +pattern-icon('formatting', 'number-list.svg')
+          +pattern-icon('formatting', 'resize.svg')
+          +pattern-icon('formatting', 'underline.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Inputs
+
+        .pl-pattern__grid
+          +pattern-icon('inputs', 'checkbox-off.svg', true)
+          +pattern-icon('inputs', 'checkbox-on.svg')
+          +pattern-icon('inputs', 'checkbox-mixed.svg')
+          +pattern-icon('inputs', 'radio-off.svg', true)
+          +pattern-icon('inputs', 'radio-on.svg')
+          +pattern-icon('inputs', 'switch-off.svg', true)
+          +pattern-icon('inputs', 'switch-on.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Meta Data
+
+        .pl-pattern__grid
+          +pattern-icon('meta-data', 'automatic-audience.svg')
+          +pattern-icon('meta-data', 'external.svg')
+          +pattern-icon('meta-data', 'id.svg')
+          +pattern-icon('meta-data', 'internal.svg')
+          +pattern-icon('meta-data', 'location.svg')
+          +pattern-icon('meta-data', 'star-outline.svg')
+          +pattern-icon('meta-data', 'star.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Metrics
+
+        .pl-pattern__grid
+          +pattern-icon('metrics', 'percent.svg')
+          +pattern-icon('metrics', 'budget.svg')
+          +pattern-icon('metrics', 'currency.svg')
+          +pattern-icon('metrics', 'number-editable.svg')
+          +pattern-icon('metrics', 'number-editable-color.svg')
+          +pattern-icon('metrics', 'payment.svg')
+          +pattern-icon('metrics', 'referral.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Navigation
+
+        .pl-pattern__grid
+          +pattern-icon('navigation', 'audience.svg')
+          +pattern-icon('navigation', 'bookmarks.svg')
+          +pattern-icon('navigation', 'campaign.svg')
+          +pattern-icon('navigation', 'contact.svg')
+          +pattern-icon('navigation', 'creative.svg')
+          +pattern-icon('navigation', 'customer-data.svg')
+          +pattern-icon('navigation', 'dashboard.svg')
+          +pattern-icon('navigation', 'feedback.svg')
+          +pattern-icon('navigation', 'history.svg')
+          +pattern-icon('navigation', 'menu.svg')
+          +pattern-icon('navigation', 'notifications.svg')
+          +pattern-icon('navigation', 'nurture.svg')
+          +pattern-icon('navigation', 'parent-account.svg')
+          +pattern-icon('navigation', 'placement.svg')
+          +pattern-icon('navigation', 'preferences.svg')
+          +pattern-icon('navigation', 'reports.svg')
+          +pattern-icon('navigation', 'settings.svg')
+          +pattern-icon('navigation', 'user.svg')
+          +pattern-icon('navigation', 'widget.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Placement
+
+        .pl-pattern__grid
+          +pattern-icon('placement', 'in-transaction.svg')
+          +pattern-icon('placement', 'post-action.svg')
+          +pattern-icon('placement', 'landing-page.svg')
+          +pattern-icon('placement', 'post-transaction.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Status
+
+        .pl-pattern__grid
+          +pattern-icon('status', 'check.svg')
+          +pattern-icon('status', 'error.svg')
+          +pattern-icon('status', 'inactive.svg')
+          +pattern-icon('status', 'live.svg')
+          +pattern-icon('status', 'pause.svg')
+          +pattern-icon('status', 'pause-hover.svg')
+          +pattern-icon('status', 'play.svg')
+          +pattern-icon('status', 'pending.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 System
+
+        .pl-pattern__grid
+          +pattern-icon('system', 'error.svg')
+          +pattern-icon('system', 'help.svg')
+          +pattern-icon('system', 'progress.svg')
+          +pattern-icon('system', 'required.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Targeting
+
+        .pl-pattern__grid
+          +pattern-icon('targeting', 'brand.svg')
+          +pattern-icon('targeting', 'chrome.svg')
+          +pattern-icon('targeting', 'internet-explorer.svg')
+          +pattern-icon('targeting', 'firefox.svg')
+          +pattern-icon('targeting', 'opera.svg')
+          +pattern-icon('targeting', 'safari.svg')
+          +pattern-icon('targeting', 'devices.svg')
+          +pattern-icon('targeting', 'food.svg')
+          +pattern-icon('targeting', 'general.svg')
+          +pattern-icon('targeting', 'industry.svg')
+          +pattern-icon('targeting', 'listing.svg')
+          +pattern-icon('targeting', 'news.svg')
+          +pattern-icon('targeting', 'sub-industry.svg')
+          +pattern-icon('targeting', 'targeting.svg')
+          +pattern-icon('targeting', 'travel.svg')
+          +pattern-icon('targeting', 'desktop.svg')
+          +pattern-icon('targeting', 'mobile.svg')
+          +pattern-icon('targeting', 'tablet.svg')
+
+      //- Start Icon Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Triggers
+
+        .pl-pattern__grid
+          +pattern-icon('triggers', 'audience.svg')
+          +pattern-icon('triggers', 'demographic.svg')
+          +pattern-icon('triggers', 'device.svg')
+          +pattern-icon('triggers', 'frequency.svg')
+          +pattern-icon('triggers', 'geolocation.svg')
+          +pattern-icon('triggers', 'query.svg')
+          +pattern-icon('triggers', 'click.svg')
+          +pattern-icon('triggers', 'segment.svg')
+          +pattern-icon('triggers', 'url-target.svg')
+          +pattern-icon('triggers', 'app-event.svg')
+          +pattern-icon('triggers', 'form.svg')
+          +pattern-icon('triggers', 'page-view.svg')
+          +pattern-icon('triggers', 'trigger.svg')
+          +pattern-icon('triggers', 'auto.svg')
+          +pattern-icon('triggers', 'embedded.svg')
+          +pattern-icon('triggers', 'expand.svg')
+          +pattern-icon('triggers', 'launch.svg')

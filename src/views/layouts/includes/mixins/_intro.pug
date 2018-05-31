@@ -1,0 +1,8 @@
+- var header = '';
+mixin intro(page, copy)
+  - header = page.toLowerCase().split(' ').join('-');
+  .pl-page__intro
+    .pl-page__header
+      h1= page
+      each paragraph in copy
+        p!= paragraph

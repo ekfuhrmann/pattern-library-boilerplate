@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Action/Pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Action/Pin">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M14,3 C12.9773756,3.82466063 13.0486425,5.32126697 14,7 L8,11 C5.82013575,9.20022624 3.83484163,8.65045249 3,9 L8,15 L3,21 L9,16 L15,21 C15.3495475,20.1651584 14.7895928,18.1798643 13,16 L17,10 C18.668552,10.9513575 20.1651584,11.0328054 21,10 L14,3 Z" id="pin" fill="#202022"></path>
+        </g>
+    </g>
+</svg>

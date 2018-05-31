@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Targeting/tablet</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Targeting/tablet">
+            <rect id="Bounding-Box" x="0" y="0" width="72" height="72"></rect>
+            <path d="M51,8 L21,8 C18.243,8 16,10.5843261 16,13.7608696 L16,55.2391304 C16,58.4156739 18.243,61 21,61 L51,61 C53.757,61 56,58.4156739 56,55.2391304 L56,13.7608696 C56,10.5843261 53.757,8 51,8 Z M36,58.5 C34.895,58.5 34,57.605 34,56.5 C34,55.395 34.895,54.5 36,54.5 C37.105,54.5 38,55.395 38,56.5 C38,57.605 37.105,58.5 36,58.5 Z M52,50.6666667 C52,51.4026667 51.552,52 51,52 L21,52 C20.448,52 20,51.4026667 20,50.6666667 L20,13.3333333 C20,12.5973333 20.448,12 21,12 L51,12 C51.552,12 52,12.5973333 52,13.3333333 L52,50.6666667 Z" id="Shape" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

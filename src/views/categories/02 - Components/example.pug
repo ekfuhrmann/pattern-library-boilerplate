@@ -1,0 +1,224 @@
+extends ../../templates/_default
+
+block includes
+  include ../../layouts/includes/_mixins
+
+//- Page Head Variables
+block vars
+  - var title = '';
+  - var description = '';
+
+block content
+  -
+    var intro = {
+      header: 'Example',
+      copy: [
+        `This is a sample page to show off some of the different variations for displaying patterns within&nbsp;this&nbsp;library.`,
+      ]
+    }
+  +intro(intro.header, intro.copy)
+
+  .pl-page__content
+    .pl-wrapper
+
+      //- Start Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Code with mobile toggle
+          p Ea eu irure ut magna in ullamco ea fugiat proident amet pariatur sint nisi dolor. Duis exercitation cillum amet fugiat mollit id laborum dolor. Et eiusmod voluptate quis tempor officia aute labore mollit ipsum adipisicing nisi amet irure.
+
+        -
+          var blockContent = {
+          hasMobile: true,
+          // keep the following tab index so that spacing is true to markup
+          previewCode:
+          `<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary">Primary</button>
+
+          <!-- Secondary, outline button -->
+          <button type="button" class="btn btn-secondary">Secondary</button>
+
+          <!-- Indicates a successful or positive action -->
+          <button type="button" class="btn btn-success">Success</button>
+
+          <!-- Contextual button for informational alert messages -->
+          <button type="button" class="btn btn-info">Info</button>
+
+          <!-- Indicates caution should be taken with this action -->
+          <button type="button" class="btn btn-warning">Warning</button>
+
+          <!-- Indicates a dangerous or potentially negative action -->
+          <button type="button" class="btn btn-danger">Danger</button>
+
+          <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+          <button type="button" class="btn btn-link">Link</button>`,
+          desktopImages: [
+            {
+              image: '',
+              imageDescription: ''
+            }
+          ],
+          mobileImages: [
+            {
+              image: '',
+              imageDescription: ''
+            }
+          ],
+          previewBgColor: 'white' //- (white [default], offwhite, gray)
+          }
+
+        +pattern-preview-block(blockContent.hasMobile, blockContent.previewCode, blockContent.desktopImages, blockContent.mobileImages, blockContent.previewBgColor)
+
+      //- Start Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Image with mobile toggle
+          p Sit laborum labore commodo et. Amet dolore magna excepteur incididunt aliqua est. Minim tempor non excepteur anim duis est pariatur occaecat tempor duis est labore. Quis commodo aliqua dolor deserunt deserunt est in mollit occaecat ullamco adipisicing anim fugiat. Ullamco ea dolore eu irure consectetur officia non sint in. Do dolor adipisicing aliqua nisi aute nulla et ut et laboris pariatur.
+
+        -
+          var blockContent = {
+          hasMobile: true,
+          // keep the following tab index so that spacing is true to markup
+          previewCode:
+          ``,
+          desktopImages: [
+            {
+              image: '/example/example.png',
+              imageDescription: 'This is an example image.'
+            }
+          ],
+          mobileImages: [
+            {
+              image: '/example/example2.png',
+              imageDescription: 'This is an example image.'
+            }
+          ],
+          previewBgColor: 'white' //- (white [default], offwhite, gray)
+          }
+
+        +pattern-preview-block(blockContent.hasMobile, blockContent.previewCode, blockContent.desktopImages, blockContent.mobileImages, blockContent.previewBgColor)
+
+      //- Start Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Image & Code with mobile toggle
+          p Id est consectetur anim culpa aute aliqua veniam dolor nisi. Lorem incididunt elit pariatur nostrud ipsum. Nulla dolore reprehenderit exercitation labore adipisicing laborum id.
+
+        -
+          var blockContent = {
+          hasMobile: true,
+          // keep the following tab index so that spacing is true to markup
+          previewCode:
+          `<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary">Primary</button>
+
+          <!-- Secondary, outline button -->
+          <button type="button" class="btn btn-secondary">Secondary</button>
+
+          <!-- Indicates a successful or positive action -->
+          <button type="button" class="btn btn-success">Success</button>
+
+          <!-- Contextual button for informational alert messages -->
+          <button type="button" class="btn btn-info">Info</button>
+
+          <!-- Indicates caution should be taken with this action -->
+          <button type="button" class="btn btn-warning">Warning</button>
+
+          <!-- Indicates a dangerous or potentially negative action -->
+          <button type="button" class="btn btn-danger">Danger</button>
+
+          <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+          <button type="button" class="btn btn-link">Link</button>`,
+          desktopImages: [
+            {
+              image: '/example/example.png',
+              imageDescription: 'This is an example image.'
+            }
+          ],
+          mobileImages: [
+            {
+              image: '/example/example2.png',
+              imageDescription: 'This is an example image.'
+            }
+          ],
+          previewBgColor: 'white' //- (white [default], offwhite, gray)
+          }
+
+        +pattern-preview-block(blockContent.hasMobile, blockContent.previewCode, blockContent.desktopImages, blockContent.mobileImages, blockContent.previewBgColor)
+
+      //- Start Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Image Only
+          p Do amet pariatur ad non sint sint irure adipisicing commodo velit excepteur ex magna mollit. Anim ea velit deserunt eiusmod labore. Aute sit mollit ullamco occaecat amet incididunt pariatur voluptate non est adipisicing. Duis id enim fugiat cupidatat magna excepteur nostrud anim duis sit ullamco do sit adipisicing. Cillum nulla duis ea dolor est ullamco commodo veniam excepteur amet commodo. Sint dolore incididunt id eu reprehenderit magna ullamco dolor non ad laborum ipsum.
+
+        -
+          var blockContent = {
+          hasMobile: false,
+          // keep the following tab index so that spacing is true to markup
+          previewCode:
+          ``,
+          desktopImages: [
+            {
+              image: '/example/badge.png',
+              imageDescription: 'This is an example image.'
+            }
+          ],
+          mobileImages: [
+            {
+              image: '',
+              imageDescription: ''
+            }
+          ],
+          previewBgColor: 'white' //- (white [default], offwhite, gray)
+          }
+
+        +pattern-preview-block(blockContent.hasMobile, blockContent.previewCode, blockContent.desktopImages, blockContent.mobileImages, blockContent.previewBgColor)
+
+      //- Start Pattern
+      .pl-pattern
+        .pl-pattern__content
+          h3 Code Only
+          p Id est consectetur anim culpa aute aliqua veniam dolor nisi. Lorem incididunt elit pariatur nostrud ipsum. Nulla dolore reprehenderit exercitation labore adipisicing laborum id.
+
+        -
+          var blockContent = {
+          hasMobile: false,
+          // keep the following tab index so that spacing is true to markup
+          previewCode:
+          `<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary">Primary</button>
+
+          <!-- Secondary, outline button -->
+          <button type="button" class="btn btn-secondary">Secondary</button>
+
+          <!-- Indicates a successful or positive action -->
+          <button type="button" class="btn btn-success">Success</button>
+
+          <!-- Contextual button for informational alert messages -->
+          <button type="button" class="btn btn-info">Info</button>
+
+          <!-- Indicates caution should be taken with this action -->
+          <button type="button" class="btn btn-warning">Warning</button>
+
+          <!-- Indicates a dangerous or potentially negative action -->
+          <button type="button" class="btn btn-danger">Danger</button>
+
+          <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+          <button type="button" class="btn btn-link">Link</button>`,
+          desktopImages: [
+            {
+              image: '',
+              imageDescription: ''
+            }
+          ],
+          mobileImages: [
+            {
+              image: '',
+              imageDescription: ''
+            }
+          ],
+          previewBgColor: 'white' //- (white [default], offwhite, gray)
+          }
+
+        +pattern-preview-block(blockContent.hasMobile, blockContent.previewCode, blockContent.desktopImages, blockContent.mobileImages, blockContent.previewBgColor)

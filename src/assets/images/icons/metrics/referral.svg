@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Metrics/Referral</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Metrics/Referral">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M24,12 L18,7 L18,11 L11.414,11 L8.172,7.757 C7.037,6.624 5.53,6 3.929,6 L0,6 L0,8 L3.929,8 C4.997,8 6.002,8.416 6.758,9.171 L9.586,12 L6.758,14.828 C6.002,15.584 4.997,16 3.929,16 L0,16 L0,18 L3.929,18 C5.531,18 7.037,17.376 8.172,16.243 L11.414,13 L18,13 L18,17 L24,12 Z" id="referral" fill="#202022"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Targeting/travel</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Targeting/travel">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M21.9999948,3.87520756 C22.0017781,3.11623872 21.5451554,2.43127619 20.8438519,2.14092101 C20.1425484,1.85056583 19.3353202,2.01226613 18.7999956,2.55033707 L14.3874968,6.96240577 L4.49999935,3.25026865 L3.24999967,5.75002428 L10.6624977,10.6870417 L6.84999874,14.499169 L3.24999967,14.499169 L2,15.7490468 L5.74999902,18.2488025 L8.24999837,21.9984359 L9.49999805,20.7485581 L9.49999805,17.14891 L13.3124971,13.3367826 L18.2499958,20.7485581 L20.7499951,19.4986803 L17.0374961,9.61214674 L21.4499949,5.20007804 C21.7874949,4.86261103 21.9999948,4.38765746 21.9999948,3.87520756 Z" id="Shape" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

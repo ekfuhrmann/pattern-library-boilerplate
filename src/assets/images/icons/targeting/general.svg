@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Targeting/general</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Targeting/general">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M5.75,4.5 L18.25,4.5 C18.9375,4.5 19.5,3.9375 19.5,3.25 C19.5,2.5625 18.9375,2 18.25,2 L5.75,2 C5.0625,2 4.5,2.5625 4.5,3.25 C4.5,3.9375 5.0625,4.5 5.75,4.5 Z M17,18.25 L7,18.25 L7,14.5 L4.5,14.5 L4.5,20.75 C4.5,21.4375 5.0625,22 5.75,22 L18.25,22 C18.9375,22 19.5,21.4375 19.5,20.75 L19.5,14.5 L17,14.5 L17,18.25 Z M22,10.75 L20.7375,6.7875 C20.625,6.2 20.1125,5.75 19.5,5.75 L4.5,5.75 C3.8875,5.75 3.375,6.2 3.275,6.7875 L2.0125,10.75 L2,10.75 C2,12.125 3.125,13.25 4.5,13.25 C5.875,13.25 7,12.125 7,10.75 C7,12.125 8.125,13.25 9.5,13.25 C10.875,13.25 12,12.125 12,10.75 C12,12.125 13.125,13.25 14.5,13.25 C15.875,13.25 17,12.125 17,10.75 C17,12.125 18.125,13.25 19.5,13.25 C20.875,13.25 22,12.125 22,10.75 Z" id="Shape" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

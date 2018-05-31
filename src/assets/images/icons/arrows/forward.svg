@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Arrow/Forward</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Arrow/Forward">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M20.71,11.2915426 L14.71,5.2939725 C14.3178778,4.90200916 13.6821222,4.90200917 13.29,5.29397253 C12.8978779,5.68593589 12.8978778,6.32143406 13.29,6.71339743 L17.59,11.0016601 L4,11.0016601 C3.45,11.0016601 3,11.4514778 3,12.0012551 C3,12.5510323 3.45,13.0008501 4,13.0008501 L17.59,13.0008501 L13.3,17.2891127 C13.11,17.4690398 13,17.7189386 13,17.9988252 C13.0005845,18.4035007 13.2444918,18.7681498 13.618384,18.9233287 C13.9922761,19.0785076 14.4228389,18.9937882 14.71,18.7085376 L20.71,12.7109675 C20.89,12.5310404 21,12.2811417 21,12.0012551 C21,11.7213685 20.89,11.4714697 20.71,11.2915426 Z" id="forward" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

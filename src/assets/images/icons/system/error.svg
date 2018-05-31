@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@System/Error</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@System/Error">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M23.832,21.1911111 C23.928,21.3622222 24,21.5577778 24,21.7777778 C24,22.45 23.46,23 22.8,23 L1.2,23 C0.54,23 0,22.45 0,21.7777778 C0,21.5577778 0.072,21.3622222 0.168,21.1911111 L0.156,21.1788889 L10.956,1.62333333 L10.968,1.63555556 C11.172,1.25666667 11.556,1 12,1 C12.444,1 12.828,1.25666667 13.032,1.63555556 L13.044,1.62333333 L23.844,21.1788889 L23.832,21.1911111 Z M12,20 C12.552,20 13,19.552 13,19 C13,18.448 12.552,18 12,18 C11.448,18 11,18.448 11,19 C11,19.552 11.448,20 12,20 Z M12,7 C11.4477153,7 11,7.44771525 11,8 L11,15 C11,15.5522847 11.4477153,16 12,16 C12.5522847,16 13,15.5522847 13,15 L13,8 C13,7.44771525 12.5522847,7 12,7 Z" id="Mask" fill="#202022"></path>
+        </g>
+    </g>
+</svg>

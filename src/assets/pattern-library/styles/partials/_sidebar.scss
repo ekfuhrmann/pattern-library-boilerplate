@@ -1,0 +1,235 @@
+.pl-sidebar {
+  @include position(fixed, 0, null, null, 0);
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  overflow: auto;
+  text-transform: capitalize;
+  background-color: map-deep-get($colors, black, primary);
+
+  @include media('>=md') {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: $sidebar;
+    height: 100vh;
+  }
+}
+
+.pl-sidebar__header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 $gridGap;
+
+  @include media('>=md') {
+    padding: $gridGap;
+  }
+}
+
+.pl-sidebar__header-link {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  text-decoration: none;
+
+  @include media('>=md') {
+    height: auto;
+  }
+}
+
+.pl-sidebar__title {
+  @include text('soleil', 26, 700, map-deep-get($colors, white, primary));
+  margin: 0;
+}
+
+.pl-sidebar__logo {
+  width: 70px;
+  height: 20px;
+  fill: map-deep-get($colors, white, primary);
+}
+
+.pl-sidebar__label {
+  @include text('soleil', 14, 700, map-deep-get($colors, black, lighten-3));
+  margin-bottom: -8px; // align to bottom of logo
+  margin-left: $gridGap/4;
+  letter-spacing: 1px;
+}
+
+// mobile menu toggle
+.pl-sidebar__toggle {
+  box-sizing: content-box;
+  width: 30px;
+  margin-left: auto;
+  padding: 10px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+
+  @include media('>=md') {
+    display: none;
+  }
+}
+
+.pl-sidebar__toggle-box {
+  position: relative;
+  // background-color: #242629;
+  display: block;
+  align-self: center;
+  width: 30px;
+  height: 24px;
+}
+
+.pl-sidebar__toggle-inner {
+  @include position(absolute, 0, null, 0, 0);
+  width: 30px; // Each pseudo is a line of the hamburger
+  height: 3px;
+  margin: auto;
+  background-color: map-deep-get($colors, white, primary);
+  transition: background-color 300ms;
+  &::before,
+  &::after {
+    @include position(absolute, null, null, null, 0);
+    width: 100%;
+    height: 100%;
+    background-color: map-deep-get($colors, white, primary);
+    backface-visibility: hidden;
+    transition: all 400ms;
+    content: '';
+  }
+
+  &::before {
+    top: -9px;
+  }
+
+  &::after {
+    top: 9px;
+  }
+
+  // Active controls when toggled
+  .is-active & {
+    background-color: transparent;
+
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.pl-sidebar__nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.6;
+  list-style: none;
+
+  .pl-sidebar > & {
+    @include position(fixed, 65px, null, 0, 0);
+    padding: 0;
+    overflow: auto;
+    background-color: map-deep-get($colors, black, primary);
+    transform: translateX(100%);
+    transition: transform 400ms ease-out;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+      background-color: map-deep-get($colors, black, primary);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: map-deep-get($colors, black, lighten-1);
+      border-radius: 10px;
+    }
+
+    > :last-child {
+      margin-bottom: $gridGap * 4;
+    }
+
+    @include media('>=md') {
+      @include position(relative, unset, unset, unset, unset);
+      height: calc(100vh - 65px);
+      overflow: auto;
+      transform: translateX(0);
+
+      @at-root .is-active#{&} {
+        transform: translateX(0);
+      }
+    }
+
+    // When mobile menu is toggled
+    @at-root .is-active#{&} {
+      transform: translateX(0);
+    }
+  }
+
+  @include media('>=md') {
+    position: relative;
+  }
+}
+
+.pl-sidebar__category {
+  @include text('soleil', 14, 700, map-deep-get($colors, black, lighten-2));
+  padding: $gridGap/4 $gridGap $gridGap/4 $gridGap;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  .pl-sidebar__item + & {
+    margin-top: $gridGap;
+  }
+}
+
+.pl-sidebar__item {
+  &.is-active {
+    background-color: rgba(map-deep-get($colors, black, lighten-2), 0.2);
+  }
+}
+
+.pl-sidebar__item-link {
+  @include text('soleil', 14, 700, map-deep-get($colors, black, lighten-3));
+  display: block;
+  padding: $gridGap/4 $gridGap $gridGap/4 $gridGap;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    background-color: rgba(map-deep-get($colors, black, lighten-2), 0.2);
+    outline: none;
+  }
+
+  .is-active > & {
+    color: map-deep-get($colors, white, primary);
+    box-shadow: inset 4px 0 0 0 map-deep-get($colors, blue, primary);
+  }
+
+  .pl-sidebar__nav .pl-sidebar__nav & {
+    padding: $gridGap/4 $gridGap $gridGap/4 $gridGap * 2;
+    color: map-deep-get($colors, white, primary);
+    font-weight: 400;
+    line-height: 1.4;
+
+    &.is-active {
+      font-weight: 700;
+    }
+  }
+
+  .pl-sidebar__nav .pl-sidebar__nav .pl-sidebar__item {
+    &:last-of-type & {
+      padding-bottom: $gridGap/2;
+    }
+  }
+}
+
+.pl-sidebar__nav-nested {
+  width: 10px;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@System/Info</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@System/Info">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M12,2 C17.5141667,2 22,6.48583333 22,12 C22,17.5141667 17.5141667,22 12,22 C6.48583333,22 2,17.5141667 2,12 C2,6.48583333 6.48583333,2 12,2 Z M12,8 C12.552,8 13,7.552 13,7 C13,6.448 12.552,6 12,6 C11.448,6 11,6.448 11,7 C11,7.552 11.448,8 12,8 Z M12,10 C11.4477153,10 11,10.4477153 11,11 L11,18 C11,18.5522847 11.4477153,19 12,19 C12.5522847,19 13,18.5522847 13,18 L13,11 C13,10.4477153 12.5522847,10 12,10 Z" id="system" fill="#202022"></path>
+        </g>
+    </g>
+</svg>

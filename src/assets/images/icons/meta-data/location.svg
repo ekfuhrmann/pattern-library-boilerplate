@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Meta Data/Location</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Meta-Data/Location">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M12,3 C8.57777778,3 5,5.66086957 5,10.0434783 C5,14.1913043 11.2222222,20.5304348 11.4555556,20.7652174 C11.6111111,20.9217391 11.7666667,21 12,21 C12.2333333,21 12.3888889,20.9217391 12.5444444,20.7652174 C12.7777778,20.5304348 19,14.1913043 19,10.0434783 C19,5.66086957 15.4222222,3 12,3 Z M12,12 C10.8666667,12 10,11.1333333 10,10 C10,8.86666667 10.8666667,8 12,8 C13.1333333,8 14,8.86666667 14,10 C14,11.1333333 13.1333333,12 12,12 Z" id="location" fill="#202022"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Input/Checkbox/Mixed</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Input/Checkbox/Mixed">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M4,4.66666667 C4,4.29847683 4.29847683,4 4.66666667,4 L19.3333333,4 C19.7015232,4 20,4.29847683 20,4.66666667 L20,19.3333333 C20,19.7015232 19.7015232,20 19.3333333,20 L4.66666667,20 C4.29847683,20 4,19.7015232 4,19.3333333 L4,4.66666667 Z M15.2,12.8 C15.6418278,12.8 16,12.4418278 16,12 C16,11.5581722 15.6418278,11.2 15.2,11.2 L8.8,11.2 C8.3581722,11.2 8,11.5581722 8,12 C8,12.4418278 8.3581722,12.8 8.8,12.8 L15.2,12.8 Z" id="mixed" fill="#ACB5BE"></path>
+        </g>
+    </g>
+</svg>

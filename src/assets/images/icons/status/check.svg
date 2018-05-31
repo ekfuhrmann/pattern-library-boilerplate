@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Status/Check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Status/Check">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M16.9947802,8 C16.714913,8 16.4650316,8.11 16.285117,8.29 L9.99810064,14.59 L7.7091869,12.29 C7.45564866,12.0363414 7.08610862,11.9372765 6.73976893,12.030122 C6.39342925,12.1229674 6.12290716,12.3936179 6.03010572,12.740122 C5.93730428,13.086626 6.03632224,13.4563414 6.28986049,13.71 L9.28843743,16.71 C9.46835204,16.89 9.71823346,17 9.99810064,17 C10.2779678,17 10.5278492,16.89 10.7077638,16.71 L17.7044434,9.71 C17.9896741,9.42283889 18.0743876,8.99227609 17.9192195,8.61838396 C17.7640514,8.24449184 17.3994276,8.00058453 16.9947802,8 Z" id="Check" fill="#202022"></path>
+        </g>
+    </g>
+</svg>

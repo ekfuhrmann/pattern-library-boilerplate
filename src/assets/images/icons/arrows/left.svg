@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@Arrow/Left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@Arrow/Left">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M14.25,7 C14.07,7 13.905,7.075 13.7775,7.18 L9.27,10.9225 C9.1125,11.0725 9,11.2675 9,11.5 C9,11.7325 9.1125,11.9275 9.2775,12.07 L13.77,15.8275 C13.905,15.925 14.07,16 14.25,16 C14.6625,16 15,15.6625 15,15.25 L15,7.75 C15,7.3375 14.6625,7 14.25,7 Z" id="left" fill="#202022" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

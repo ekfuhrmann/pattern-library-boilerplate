@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>@System/Required</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="17 10.8626414 13.925 10.8626414 15.4622222 8.13707431 13.5383333 7 12 9.72556712 10.4622222 7 8.53833333 8.13707431 10.0766667 10.8626414 7 10.8626414 7 13.13679 10.0761111 13.13679 8.53833333 15.8629257 10.4622222 17 12.0005556 14.2727273 13.5383333 16.9988629 15.4622222 15.8617886 13.925 13.13679 17 13.13679"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="@System/Required">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#202022" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
