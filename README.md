@@ -141,7 +141,7 @@ Input:
 
 Output:
 
-![image](https://user-images.githubusercontent.com/8878152/35449629-90ccd7c6-028b-11e8-8e27-89d75eb8c04c.png)
+![image](https://user-images.githubusercontent.com/8878152/40804839-728533c8-64ea-11e8-826c-6b3286503e00.png)
 
 Sections, such as '00 - Introduction' and '01 - Style Guide', are actually sidebar category titles with the ordering of these sections being handled by placing a number followed by a dash (-) with **spaces on both sides of it**.
 
