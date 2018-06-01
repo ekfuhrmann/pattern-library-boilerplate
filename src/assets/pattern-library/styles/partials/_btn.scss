@@ -1,29 +1,29 @@
 .pl-btn {
-    @include text('soleil', 14, 700);
-    display: inline-flex;
-    align-items: center;
-    line-height: 1.4;
-    text-decoration: none;
-    background-color: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    transition: all 300ms;
-    appearance: none;
+  @include text('soleil', 14, 700);
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.4;
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  transition: all 300ms;
+  appearance: none;
 }
 
 .pl-btn__outline {
-    @extend .pl-btn;
-    align-self: flex-end;
-    margin-top: auto;
-    padding: $gridGap/2 $gridGap;
-    color: map-deep-get($colors, white, primary);
-    box-shadow: 0 0 0 2px map-deep-get($colors, white, primary);
+  @extend .pl-btn;
+  align-self: flex-end;
+  margin-top: auto;
+  padding: $gridGap/2 $gridGap;
+  color: $white;
+  box-shadow: 0 0 0 2px $white;
 
-    &:focus,
-    &:hover {
-        color: map-deep-get($colors, black, primary);
-        background-color: map-deep-get($colors, white, primary);
-        outline: none;
-    }
+  &:focus,
+  &:hover {
+    color: $shark;
+    background-color: $white;
+    outline: none;
+  }
 }

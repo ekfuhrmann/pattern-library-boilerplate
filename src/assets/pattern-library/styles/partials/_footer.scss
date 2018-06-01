@@ -1,6 +1,6 @@
 .pl-footer {
   padding: $gridGap * 2 $percentPadding $gridGap * 4;
-  background-color: map-deep-get($colors, white, darken-1);
+  background-color: $wild-sand;
 
   @include media('>=md') {
     padding: $gridGap * 2 $percentPadding/2 $gridGap * 4;
@@ -22,9 +22,9 @@
   max-width: 100%;
   padding: $gridGap * 1.5 $gridGap;
   overflow: hidden;
-  color: map-deep-get($colors, black, primary);
+  color: $shark;
   text-decoration: none;
-  background-color: map-deep-get($colors, white, darken-2);
+  background-color: $athens-gray;
   transition: background-color 200ms;
 
   &.prev {
@@ -36,7 +36,7 @@
   }
 
   &:hover {
-    background-color: darken(map-deep-get($colors, white, darken-2), 7%);
+    background-color: darken($athens-gray, 7%);
   }
 
   + .pl-footer__link {
@@ -74,7 +74,7 @@
 
   &::after {
     @include background-svg(
-      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 9"><defs><style>.cls-1{fill:#{map-deep-get($colors, black, primary)};}</style></defs><title>icon-arrow-right</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path id="right-a" class="cls-1" d="M6,4.5a.75.75,0,0,0-.28-.57h0L1.23.17h0A.75.75,0,0,0,.75,0,.75.75,0,0,0,0,.75v7.5A.75.75,0,0,0,.75,9a.75.75,0,0,0,.47-.18h0l4.5-3.75h0A.75.75,0,0,0,6,4.5Z"/></g></g></svg>'
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 9"><defs><style>.cls-1{fill:#{$shark};}</style></defs><title>icon-arrow-right</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path id="right-a" class="cls-1" d="M6,4.5a.75.75,0,0,0-.28-.57h0L1.23.17h0A.75.75,0,0,0,.75,0,.75.75,0,0,0,0,.75v7.5A.75.75,0,0,0,.75,9a.75.75,0,0,0,.47-.18h0l4.5-3.75h0A.75.75,0,0,0,6,4.5Z"/></g></g></svg>'
     );
     display: block;
     flex-shrink: 0;

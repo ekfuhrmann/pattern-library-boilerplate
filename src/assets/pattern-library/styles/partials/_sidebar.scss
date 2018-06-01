@@ -8,7 +8,7 @@
   height: 65px;
   overflow: auto;
   text-transform: capitalize;
-  background-color: map-deep-get($colors, black, primary);
+  background-color: $shark;
 
   @include media('>=md') {
     position: fixed;
@@ -42,18 +42,18 @@
 }
 
 .pl-sidebar__title {
-  @include text('soleil', 26, 700, map-deep-get($colors, white, primary));
+  @include text('soleil', 26, 700, $white);
   margin: 0;
 }
 
 .pl-sidebar__logo {
   width: 70px;
   height: 20px;
-  fill: map-deep-get($colors, white, primary);
+  fill: $white;
 }
 
 .pl-sidebar__label {
-  @include text('soleil', 14, 700, map-deep-get($colors, black, lighten-3));
+  @include text('soleil', 14, 700, $hit-gray);
   margin-bottom: -8px; // align to bottom of logo
   margin-left: $gridGap/4;
   letter-spacing: 1px;
@@ -89,14 +89,14 @@
   width: 30px; // Each pseudo is a line of the hamburger
   height: 3px;
   margin: auto;
-  background-color: map-deep-get($colors, white, primary);
+  background-color: $white;
   transition: background-color 300ms;
   &::before,
   &::after {
     @include position(absolute, null, null, null, 0);
     width: 100%;
     height: 100%;
-    background-color: map-deep-get($colors, white, primary);
+    background-color: $white;
     backface-visibility: hidden;
     transition: all 400ms;
     content: '';
@@ -138,18 +138,18 @@
     @include position(fixed, 65px, null, 0, 0);
     padding: 0;
     overflow: auto;
-    background-color: map-deep-get($colors, black, primary);
+    background-color: $shark;
     transform: translateX(100%);
     transition: transform 400ms ease-out;
 
     &::-webkit-scrollbar {
       width: 10px;
       height: 10px;
-      background-color: map-deep-get($colors, black, primary);
+      background-color: $shark;
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: map-deep-get($colors, black, lighten-1);
+      background-color: $abbey;
       border-radius: 10px;
     }
 
@@ -180,7 +180,7 @@
 }
 
 .pl-sidebar__category {
-  @include text('soleil', 14, 700, map-deep-get($colors, black, lighten-2));
+  @include text('soleil', 14, 700, $shuttle-gray);
   padding: $gridGap/4 $gridGap $gridGap/4 $gridGap;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -192,33 +192,34 @@
 
 .pl-sidebar__item {
   &.is-active {
-    background-color: rgba(map-deep-get($colors, black, lighten-2), 0.2);
+    background-color: rgba($shuttle-gray, 0.2);
   }
 }
 
 .pl-sidebar__item-link {
-  @include text('soleil', 14, 700, map-deep-get($colors, black, lighten-3));
+  @include text('soleil', 14, 700, $hit-gray);
   display: block;
   padding: $gridGap/4 $gridGap $gridGap/4 $gridGap;
   text-decoration: none;
   &:focus,
   &:hover {
-    background-color: rgba(map-deep-get($colors, black, lighten-2), 0.2);
+    background-color: rgba($shuttle-gray, 0.2);
     outline: none;
   }
 
   .is-active > & {
-    color: map-deep-get($colors, white, primary);
-    box-shadow: inset 4px 0 0 0 map-deep-get($colors, blue, primary);
+    color: $white;
+    box-shadow: inset 4px 0 0 0 $dodger-blue;
   }
 
   .pl-sidebar__nav .pl-sidebar__nav & {
     padding: $gridGap/4 $gridGap $gridGap/4 $gridGap * 2;
-    color: map-deep-get($colors, white, primary);
+    color: $white;
     font-weight: 400;
     line-height: 1.4;
 
     &.is-active {
+      padding: $gridGap/4 $gridGap/2 $gridGap/4 $gridGap * 2;
       font-weight: 700;
     }
   }

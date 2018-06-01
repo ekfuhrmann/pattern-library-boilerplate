@@ -8,7 +8,6 @@
 
 // HELPERS
 @import 'helpers/variables';
-@import 'helpers/colors';
 @import 'helpers/text';
 @import 'helpers/utilities';
 
@@ -61,14 +60,14 @@ body {
 
 // Text Highlight Color
 ::selection {
-  background: map-deep-get($colors, blue, lighten-2);
+  background: $onahau;
 }
 
 // Accessibility focus outline
 button,
 a {
   &:focus {
-    outline: 1px dotted rgba(map-deep-get($colors, white, darken-2), 0.7);
+    outline: 1px dotted rgba($athens-gray, 0.7);
     outline-offset: 2px;
   }
   &::-moz-focus-inner {

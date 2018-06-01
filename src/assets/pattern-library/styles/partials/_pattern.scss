@@ -9,22 +9,22 @@
 
   // WYSIWYG Styles
   h1 {
-    @include text('soleil', 48, 400, map-deep-get($colors, black, primary));
+    @include text('soleil', 48, 400, $shark);
     margin: 0;
   }
 
   h3 {
-    @include text('soleil', 32, 400, map-deep-get($colors, black, primary));
+    @include text('soleil', 32, 400, $shark);
     margin: 0;
   }
 
   h4 {
-    @include text('soleil', 24, 400, map-deep-get($colors, black, primary));
+    @include text('soleil', 24, 400, $shark);
     margin: $gridGap * 3 0 0;
   }
 
   p {
-    @include text('soleil', 14, 400, map-deep-get($colors, black, lighten-2));
+    @include text('soleil', 14, 400, $shuttle-gray);
     margin: 0;
     line-height: 1.5;
 
@@ -42,9 +42,9 @@
   width: 100%;
   margin-top: $gridGap;
   overflow: hidden;
-  background-color: map-deep-get($colors, white, primary);
+  background-color: $white;
   border-radius: 5px;
-  box-shadow: 0 0 0 1px darken(map-deep-get($colors, white, primary), 20%);
+  box-shadow: 0 0 0 1px darken($white, 20%);
 
   @include media('>=md') {
     &.has-mobile {
@@ -54,13 +54,13 @@
 
   // Element bg color modifiers
   &.offwhite {
-    background-color: map-deep-get($colors, white, darken-1);
-    box-shadow: 0 0 0 1px darken(map-deep-get($colors, white, darken-1), 20%);
+    background-color: $wild-sand;
+    box-shadow: 0 0 0 1px darken($wild-sand, 20%);
   }
 
   &.gray {
-    background-color: map-deep-get($colors, black, lighten-1);
-    box-shadow: 0 0 0 1px darken(map-deep-get($colors, black, lighten-1), 20%);
+    background-color: $abbey;
+    box-shadow: 0 0 0 1px darken($abbey, 20%);
   }
 }
 
@@ -68,7 +68,7 @@
   display: none;
 
   @include media('>=md') {
-    @include text('soleil', 14, 400, map-deep-get($colors, black, lighten-2));
+    @include text('soleil', 14, 400, $shuttle-gray);
     display: inline-block;
     margin: $gridGap $gridGap/4 0;
     padding: $gridGap/4 $gridGap/2 calc(#{$gridGap/4} + 2px); // calc in bottom underline
@@ -79,20 +79,20 @@
     transition: all 300ms;
 
     &.is-active {
-      color: map-deep-get($colors, blue, primary);
+      color: $dodger-blue;
       font-weight: 700;
-      box-shadow: inset 0 -2px 0 0 map-deep-get($colors, blue, primary);
+      box-shadow: inset 0 -2px 0 0 $dodger-blue;
 
       &:hover,
       &:focus {
-        box-shadow: inset 0 -2px 0 0 map-deep-get($colors, blue, primary);
+        box-shadow: inset 0 -2px 0 0 $dodger-blue;
       }
     }
 
     &:hover,
     &:focus {
-      background-color: map-deep-get($colors, white, darken-2);
-      box-shadow: inset 0 -2px 0 0 map-deep-get($colors, black, lighten-2);
+      background-color: $athens-gray;
+      box-shadow: inset 0 -2px 0 0 $shuttle-gray;
     }
   }
 }
@@ -175,7 +175,7 @@
 
     &::selection,
     span::selection {
-      background: rgba(map-deep-get($colors, white, primary), 0.1);
+      background: rgba($white, 0.1);
     }
   }
 }
@@ -183,7 +183,7 @@
 .pl-pattern__code-copy {
   @include position(absolute, $gridGap/2, $gridGap/2);
   z-index: 1;
-  color: map-deep-get($colors, black, lighten-2);
+  color: $shuttle-gray;
   user-select: none;
 }
 
@@ -222,13 +222,13 @@
 .pl-pattern__code-btn {
   &.copy {
     @include position(absolute, $gridGap/2, $gridGap/2);
-    color: map-deep-get($colors, black, lighten-2);
+    color: $shuttle-gray;
     transition: background-color 300ms;
   }
 
   &.expand {
     margin: auto auto $gridGap;
-    color: map-deep-get($colors, white, primary);
+    color: $white;
     transform: translateY(0);
     visibility: vissible;
     opacity: 1;
@@ -248,7 +248,7 @@
     @include position(absolute, null, auto, $gridGap, auto);
     align-self: center;
     margin: 0 auto;
-    color: map-deep-get($colors, black, lighten-2);
+    color: $shuttle-gray;
     transform: translateY(-20px);
     visibility: hidden;
     opacity: 0;
@@ -283,10 +283,10 @@
 .pl-pattern__grid-btn {
   &.copy {
     align-self: center;
-    color: map-deep-get($colors, white, primary);
+    color: $white;
     font-weight: 400;
     border: none;
-    box-shadow: 0 0 0 2px map-deep-get($colors, white, primary);
+    box-shadow: 0 0 0 2px $white;
     visibility: hidden;
     opacity: 0;
     transition: all 300ms;
@@ -298,19 +298,19 @@
 
     &:hover,
     &:focus {
-      color: map-deep-get($colors, black, primary);
-      background-color: map-deep-get($colors, white, primary);
+      color: $shark;
+      background-color: $white;
       outline: none;
     }
 
     &.alt {
-      color: map-deep-get($colors, black, primary);
-      box-shadow: 0 0 0 2px map-deep-get($colors, black, primary);
+      color: $shark;
+      box-shadow: 0 0 0 2px $shark;
 
       &:hover,
       &:focus {
-        color: map-deep-get($colors, white, primary);
-        background-color: map-deep-get($colors, black, primary);
+        color: $white;
+        background-color: $shark;
       }
     }
   }
@@ -326,7 +326,7 @@
   margin: $gridGap/2;
   padding: 5px;
   overflow: hidden;
-  background-color: map-deep-get($colors, white, primary);
+  background-color: $white;
   border-radius: 5px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
   transition: box-shadow 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -371,7 +371,7 @@
   justify-content: center;
   align-items: center;
   height: 108px;
-  background-color: map-deep-get($colors, white, darken-2);
+  background-color: $athens-gray;
   border-radius: 4px 4px 0 0;
 
   img.pl-inverted {
@@ -384,7 +384,7 @@
 }
 
 .pl-pattern__grid-text {
-  @include text('soleil', 14, 400, map-deep-get($colors, black, lighten-2));
+  @include text('soleil', 14, 400, $shuttle-gray);
   margin: 0;
 
   &.pl-hex {
@@ -410,7 +410,7 @@
 
 .pl-pattern__typography-sample {
   margin-bottom: $gridGap;
-  color: map-deep-get($colors, black, primary);
+  color: $shark;
   font-family: 'Soleil', sans-serif;
 
   @include media('>=md') {
@@ -471,7 +471,7 @@
     width: 100px;
     height: 2px;
     margin-top: $gridGap * 2;
-    background-color: map-deep-get($colors, white, darken-2);
+    background-color: $athens-gray;
     content: '';
 
     .pl-pattern__typography:last-of-type & {
@@ -484,7 +484,7 @@
   @include text('soleil', 14);
   margin: 0;
   padding: 0;
-  color: map-deep-get($colors, black, primary);
+  color: $shark;
   font-weight: 700;
   list-style: none;
 
@@ -495,6 +495,6 @@
 
 .pl-pattern__typography-list-item {
   padding: $gridGap/2 0 0;
-  color: map-deep-get($colors, black, lighten-2);
+  color: $shuttle-gray;
   font-weight: 400;
 }

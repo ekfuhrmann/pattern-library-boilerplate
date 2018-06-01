@@ -1,3 +1,16 @@
+// Colors
+$shark: #202022;
+$abbey: #4c4e51;
+$shuttle-gray: #5f656c;
+$hit-gray: #acb5be;
+
+$white: #fff;
+$wild-sand: #f6f5f5;
+$athens-gray: #eaebed;
+
+$dodger-blue: #2199f4;
+$onahau: #cce8fe;
+
 // Media Query Breakpoint Map
 $breakpoints: (
   xs: 320px,
@@ -20,12 +33,3 @@ $column-gutter: (
   xl: 8rem
 );
 $padding: 4rem;
-
-// TODO: delete later
-// // List for generating side modifiers (see ../partials/_padded.scss)
-// $sides: (
-//   top,
-//   right,
-//   bottom,
-//   left
-// );
