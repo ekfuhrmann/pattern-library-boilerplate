@@ -17,9 +17,17 @@
     "url": "https://github.com/ekfuhrmann/pattern-library-boilerplate"
   },
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   },
-  "keywords": ["js", "sass", "api", "gulp", "npm"],
+  "keywords": [
+    "js",
+    "sass",
+    "api",
+    "gulp",
+    "npm"
+  ],
   "devDependencies": {
     "animate-scss": "^3.2.1",
     "babel-core": "^6.26.0",
@@ -73,6 +81,7 @@
     "highlight.js": "^9.12.0",
     "normalize-scss": "^5.0.3",
     "pug-lint": "^2.5.0",
-    "svg4everybody": "^2.1.9"
+    "svg4everybody": "^2.1.9",
+    "webpack-stream": "^4.0.3"
   }
 }
