@@ -4,8 +4,8 @@
 
 ### Requirements
 
-* NodeJS (Recommended 6.11.3)
-* npm (Recommended 3.10.10)
+- NodeJS (Recommended 6.11.3)
+- npm (Recommended 3.10.10)
 
 # About
 
@@ -13,21 +13,21 @@ This pattern library makes heavy use of of Gulp build processes and Pug to ensur
 
 ### Table of Contents:
 
-* [Install](#install)
-* [Usage](#usage)
-  * [Development](#development)
-  * [Production](#production)
-  * [Staging](#staging)
-* [Directories](#directories)
-* [Assets](#assets)
-  * [Pattern Library](#pattern-library)
-  * [Toolkit](#toolkit)
-* [Content](#content)
-  * [Navigation (Sidebar and Footer)](#navigation)
-  * [Header/Metadata](#header-metadata)
-  * [Preview Blocks](#preview-blocks)
-  * [Color Palettes & Icon Blocks](#color-icons)
-  * [Typography Blocks](#typography-blocks)
+- [Install](#install)
+- [Usage](#usage)
+  - [Development](#development)
+  - [Production](#production)
+  - [Staging](#staging)
+- [Directories](#directories)
+- [Assets](#assets)
+  - [Pattern Library](#pattern-library)
+  - [Toolkit](#toolkit)
+- [Content](#content)
+  - [Navigation (Sidebar and Footer)](#navigation)
+  - [Header/Metadata](#header-metadata)
+  - [Preview Blocks](#preview-blocks)
+  - [Color Palettes & Icon Blocks](#color-icons)
+  - [Typography Blocks](#typography-blocks)
 
 # Getting Started
 
@@ -105,7 +105,7 @@ The styling and scripts associated with styling that component are what should l
 
 Avoid using `toolkit` for anything other than preview content.
 
-##### NOTE: Read more about `previewCode` in the [Content Blocks](#content-blocks) section.
+##### NOTE: Read more about `previewCode` in the [Preview Blocks](#preview-blocks) section.
 
 # Content
 
