@@ -3,8 +3,8 @@
 
 // VENDORS
 @import 'include-media/dist/_include-media.scss'; // loaded from node_modules
+@import 'scss-link-underline/dist/_link-underline.scss'; // loaded from node_modules
 @import 'vendors/viewport-text';
-@import 'vendors/link-underline';
 
 // HELPERS
 @import 'helpers/variables';

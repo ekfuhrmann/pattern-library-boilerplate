@@ -65,7 +65,9 @@
     "imagemin-pngquant": "^5.0.1",
     "include-media": "^1.4.9",
     "node-sass": "^4.5.3",
+    "pug-lint": "^2.5.0",
     "require-dir": "*",
+    "scss-link-underline": "^1.0.1",
     "stylelint": "^9.1.1",
     "stylelint-config-prettier": "*",
     "stylelint-config-rational-order": "0.0.2",
@@ -80,7 +82,6 @@
     "clipboard": "^1.7.1",
     "highlight.js": "^9.12.0",
     "normalize-scss": "^5.0.3",
-    "pug-lint": "^2.5.0",
     "svg4everybody": "^2.1.9",
     "webpack-stream": "^4.0.3"
   }

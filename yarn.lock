@@ -7923,6 +7923,10 @@ sax@^1.2.4, sax@~1.2.1, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
+scss-link-underline@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/scss-link-underline/-/scss-link-underline-1.0.1.tgz#7a4e56a9eaa45bc1e77400b7520b71183fb85f5e"
+
 scss-tokenizer@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/scss-tokenizer/-/scss-tokenizer-0.2.3.tgz#8eb06db9a9723333824d3f5530641149847ce5d1"
