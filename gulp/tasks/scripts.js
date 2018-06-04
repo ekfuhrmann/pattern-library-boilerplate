@@ -12,10 +12,52 @@ const production = argv.prod || argv.production;
 
 const destination = `${config.distFolder}/assets/scripts`;
 
-gulp.task('scripts', () => {
+gulp.task('scripts-highlight', () => {
+  return (
+    gulp
+      .src('./src/assets/pattern-library/scripts/modules/highlight.js')
+      .pipe($.changed(destination))
+      .pipe(
+        $.babel({
+          presets: ['env'],
+          ignore: ['./node_modules/']
+        })
+      )
+      .on('error', $.notify.onError('Error: <%= error.message %>'))
+      .pipe($.concat('highlight.js'))
+      .pipe(when(!production, $.sourcemaps.write('./')))
+      .pipe(gulp.dest(destination))
+
+      // All production stuff here
+      // Rename file to .min and uglify that stuff
+      .pipe(when(production, $.rename({ suffix: '.min' })))
+      .pipe(
+        when(
+          production,
+          $.uglify({
+            output: {
+              comments: 'some'
+            }
+          })
+        )
+      )
+      .on('error', function(err) {
+        $.util.log($.util.colors.red('[Error]'), err.toString());
+        this.emit('end');
+      })
+      .pipe(when(production, gulp.dest(destination)))
+
+      // Finally make it uber small with gzip
+      .pipe(when(production, $.gzip()))
+      .pipe(when(production, gulp.dest(destination)))
+  );
+});
+
+gulp.task('scripts-webpack', () => {
   return (
     gulp
       .src(config.scriptFiles)
+      .pipe($.changed(destination))
       .pipe(webpack())
       .on('error', function(err) {
         $.notify.onError('Error: <%= error.message %>');
@@ -57,3 +99,5 @@ gulp.task('scripts', () => {
       .pipe(when(production, gulp.dest(destination)))
   );
 });
+
+gulp.task('scripts', gulp.parallel('scripts-highlight', 'scripts-webpack'));

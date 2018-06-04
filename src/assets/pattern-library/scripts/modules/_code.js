@@ -1,5 +1,7 @@
-import { checkMediaQuery } from './_helpers';
-import { hljs } from './highlight.min.js';
+import { checkMediaQuery, escape } from './_helpers';
+// require('highlight.js/lib/highlight.js');
+
+// hljs.initHighlightingOnLoad();
 
 // Build highlight.js code snippet
 (function code() {
@@ -9,11 +11,11 @@ import { hljs } from './highlight.min.js';
   // Find each snippet
   Array.from(snippets).forEach(function(snippet) {
     // escape the innerHTML
-    const esc = escape(snippet.innerHTML);
+    // const esc = escape(snippet.innerHTML);
 
     // Reasign escaped to node and initialize highlight.js
-    snippet.innerHTML = esc;
-    hljs.highlightBlock(snippet);
+    // snippet.innerHTML = esc;
+    hljs.highlightBlock(escape(snippet.innerHTML));
   });
 
   // Get code snippet
