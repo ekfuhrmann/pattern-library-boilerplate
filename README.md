@@ -9,7 +9,7 @@
 
 # About
 
-This pattern library makes heavy use of of Gulp build processes and Pug to ensure consistency as well as streamline the development and management of pages as quickly as possible. See the following sections for more details on working within this framework:
+This pattern library makes heavy use of Gulp build processes and Pug to ensure consistency as well as streamline the development and management of pages as quickly as possible. See the following sections for more details on working within this framework:
 
 ### Table of Contents:
 
