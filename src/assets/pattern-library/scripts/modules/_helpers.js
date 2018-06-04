@@ -2,7 +2,7 @@
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
-export function debounce(func, wait, immediate) {
+function debounce(func, wait, immediate) {
   let timeout;
   return function() {
     const context = this;
@@ -19,19 +19,14 @@ export function debounce(func, wait, immediate) {
 }
 
 // escapes a block of code
-export function escape(s) {
+function escape(s) {
   return s.replace(/[^0-9A-Za-z ]/g, function(c) {
     return '&#' + c.charCodeAt(0) + ';';
   });
 }
 
 // auto-scroll (https://pawelgrzybek.com/page-scroll-in-vanilla-javascript/)
-export function scrollIt(
-  destination,
-  duration = 200,
-  easing = 'linear',
-  callback
-) {
+function scrollIt(destination, duration = 200, easing = 'linear', callback) {
   const easings = {
     linear(t) {
       return t;
@@ -136,7 +131,7 @@ export function scrollIt(
   scroll();
 }
 
-export function checkMediaQuery(size) {
+function checkMediaQuery(size) {
   let breakpoint;
 
   // Get sizes based on CSS breakpoints

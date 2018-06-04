@@ -75,7 +75,6 @@
     "stylelint-order": "^0.8.1",
     "stylelint-scss": "*",
     "stylelint-suitcss": "*",
-    "super-gigi": "^1.17.0",
     "yargs": "^8.0.1"
   },
   "dependencies": {

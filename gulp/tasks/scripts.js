@@ -2,7 +2,6 @@
 const gulp = require('gulp');
 const plugins = require('gulp-load-plugins');
 const $ = plugins();
-const webpack = require('webpack-stream');
 const config = require('../config');
 const when = require('gulp-if');
 
@@ -16,11 +15,7 @@ gulp.task('scripts', () => {
   return (
     gulp
       .src(config.scriptFiles)
-      .pipe(webpack())
-      .on('error', function(err) {
-        $.notify.onError('Error: <%= error.message %>');
-        this.emit('end');
-      })
+      .pipe($.changed(destination))
       .pipe(when(!production, $.sourcemaps.init()))
       .pipe(
         $.babel({
