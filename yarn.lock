@@ -8635,10 +8635,6 @@ sum-up@^1.0.1:
   dependencies:
     chalk "^1.0.0"
 
-super-gigi@^1.17.0:
-  version "1.17.1"
-  resolved "https://registry.yarnpkg.com/super-gigi/-/super-gigi-1.17.1.tgz#34efd868f62f63e6e2dad93184927df202b6b690"
-
 supports-color@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-0.2.0.tgz#d92de2694eb3f67323973d7ae3d8b55b4c22190a"
