@@ -1,4 +1,4 @@
-import { checkMediaQuery } from './_helpers';
+import { checkMediaQuery, scrollIt } from './_helpers';
 
 // Build Subnav
 (function subnav() {
