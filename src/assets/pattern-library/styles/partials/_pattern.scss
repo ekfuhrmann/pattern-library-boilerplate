@@ -247,7 +247,7 @@
       transform: translateY(20px);
       visibility: hidden;
       opacity: 0;
-      transition: transform 400ms, opacity 400ms, visibility 0ms 400ms,
+      transition: transform 500ms, opacity 400ms, visibility 0ms 400ms,
         background-color 300ms;
     }
   }
@@ -260,7 +260,7 @@
     transform: translateY(-20px);
     visibility: hidden;
     opacity: 0;
-    transition: transform 400ms, opacity 400ms, visibility 0ms 400ms,
+    transition: transform 500ms, opacity 400ms, visibility 0ms 400ms,
       background-color 300ms;
     user-select: none;
 
