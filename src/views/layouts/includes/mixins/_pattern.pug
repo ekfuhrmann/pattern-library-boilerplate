@@ -34,8 +34,8 @@ mixin pattern-code(snippet)
   .pl-pattern__code-block
     button.pl-btn.pl-pattern__code-btn.copy Copy
       +inline-svg('pl-icon--code', 'pl-icon')
-    pre
-      code.xml!= snippet
+    pre.language-html
+      code!= snippet
     a.pl-pattern__code-fade(href='#')
       button.pl-btn.pl-pattern__code-btn.expand Show More
         +inline-svg('pl-icon--plus', 'pl-icon')
