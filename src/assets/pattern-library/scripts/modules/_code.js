@@ -46,7 +46,7 @@ import Clipboard from 'clipboard';
     btn.onclick = function(e) {
       e.preventDefault();
       this.blur();
-      const codeHeight = this.previousSibling.scrollHeight + 40; // account for 40px padding
+      const codeHeight = this.previousSibling.scrollHeight + 140; // account for 40px padding
       this.parentElement.classList.add('is-expanded');
       this.parentElement.style.maxHeight = `${codeHeight}px`;
     };

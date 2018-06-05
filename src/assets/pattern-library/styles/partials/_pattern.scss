@@ -149,18 +149,16 @@
   font-size: 14px;
   line-height: 1.6;
   background-color: #282c34;
-  transition: all 300ms ease-out;
+  transition: all 500ms ease-out;
 
   &.is-expanded {
     pre {
       margin-bottom: $gridGap * 1.5;
-      padding: $gridGap/2 0;
       overflow-x: auto;
     }
   }
 
   pre {
-    padding: $gridGap/2 0;
     overflow: hidden;
 
     &[class*='language-'] {
