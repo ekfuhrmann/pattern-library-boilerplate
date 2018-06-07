@@ -16,7 +16,6 @@ gulp.task('scripts', () => {
   return (
     gulp
       .src(config.scriptFiles)
-      .pipe($.changed(destination))
       .pipe(webpack())
       .on('error', function(err) {
         $.notify.onError('Error: <%= error.message %>');
